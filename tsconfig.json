@@ -17,9 +17,17 @@
     "incremental": true,
     "paths": {
       "@/*": ["src/*"],
-      "@/public/*": ["public/*"]
+      "@/public/*": ["public/*"],
+      "@/root/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".jest/jest.setup.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".jest/jest.setup.ts",
+    ".eslintrc.cjs",
+    "next.config.mjs"
+  ],
   "exclude": ["node_modules"]
 }
