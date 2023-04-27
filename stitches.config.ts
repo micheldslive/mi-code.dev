@@ -26,7 +26,12 @@ export const {
       command: 'rgba(255, 255, 255, 0.05)',
       linkedin: '#0077b5',
       instagram: '#e1306c',
-      github: '#777777'
+      github: '#777777',
+      //dev colors
+      legs: '#000',
+      legsin: '#212121',
+      notebook: '#292A2D',
+      milogo: '#eee'
     },
     fonts: {
       body: 'Biotif, sans-serif',
@@ -46,7 +51,7 @@ export const {
   },
   media: {
     bp1: '(min-width: 425px)',
-    bp2: '(min-width: 760px)',
+    bp2: '(min-width: 860px)',
     bp3: '(max-width: 780px)',
     bp4: '(max-width: 1024px)'
   },
@@ -58,6 +63,31 @@ export const {
   }
 });
 
+export const darkTheme = createTheme('dark', {
+  colors: {
+    yellow: '#ffff80',
+    pink: '#ff80bf',
+    purple: '#9580ff',
+    red: '#ff9580',
+    orange: '#ffca80',
+    green: '#8aff80',
+    cyan: '#80ffea',
+    primary: '#0d0d0d',
+    secondary: '#706457',
+    background: '#f7f8f4',
+    hover: '#dedfdb',
+    command: 'rgba(0, 0, 0, 0.05)',
+    linkedin: '#0077b5',
+    instagram: '#e1306c',
+    github: '#777777',
+    //dev colors
+    legs: '#ccc',
+    legsin: '#aaa',
+    notebook: '#c2c2c2',
+    milogo: '#111'
+  }
+});
+
 const globalStyles = globalCss({
   '*': {
     fontFamily: '$body'
@@ -66,7 +96,6 @@ const globalStyles = globalCss({
     margin: '0',
     padding: '0',
     WebkitFontSmoothing: 'antialiased',
-    background: '$background',
     border: 0
   },
   '::-webkit-scrollbar': {
@@ -114,7 +143,7 @@ const globalStyles = globalCss({
     fontFamily: '$heading',
     fontSize: '3rem',
     lineHeight: '3.125rem',
-    margin: '0 0 1.25rem',
+    margin: '0 0 0.1rem',
     color: '$primary'
   },
   h2: {

@@ -1,6 +1,22 @@
-import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
+import { CommandBar } from '@/components';
+import { I18nProvider } from '@/locales';
+import { useThemeState } from '@/stores';
+import { darkTheme } from '@/root/stitches.config';
+import { ThemeWrapper } from '@/styles';
+import '@/styles/globals.css';
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }: AppProps) {
+  const { dark } = useThemeState();
+  return (
+    <I18nProvider locale={pageProps.locale}>
+      <CommandBar>
+        <ThemeWrapper className={dark ? darkTheme : ''}>
+          <Component {...pageProps} />
+        </ThemeWrapper>
+      </CommandBar>
+    </I18nProvider>
+  );
 }
+
+export default MyApp;
