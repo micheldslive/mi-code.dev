@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-misused-promises */
 import { getLocaleProps } from '@/locales';
 import { ContactTemplate, type ContactProps } from '@/templates';
 
