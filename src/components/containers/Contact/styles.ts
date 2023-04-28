@@ -1,46 +1,6 @@
 import { styled } from '@/root/stitches.config';
 
-export const Form = styled('form', {
-  display: 'flex',
-  flexDirection: 'column',
-  maxWidth: '400px'
-});
-
-export const FormGroup = styled('div', {
-  display: 'flex',
-  flexDirection: 'column',
-  marginBottom: '0.625rem'
-});
-
-export const Label = styled('label', {
-  color: '$secondary',
-  textTransform: 'uppercase',
-  fontSize: '0.75rem',
-  fontWeight: '500'
-});
-
-export const Input = styled('input', {
-  color: '$primary',
-  background: 'none',
-  border: '1px solid $secondary',
-  borderRadius: '$borderRadius',
-  padding: '0.625rem',
-  height: '2rem',
-  fontSize: '0.95rem',
-  '&:focus': { outline: 'none', borderColor: '$blue' }
-});
-
-export const Textarea = styled('textarea', {
-  color: '$primary',
-  background: 'none',
-  border: '1px solid $secondary',
-  borderRadius: '$borderRadius',
-  padding: '0.625rem',
-  fontSize: '0.95rem',
-  '&:focus': { outline: 'none', borderColor: '$blue' }
-});
-
-export const Button = styled('button', {
+export const Mailto = styled('a', {
   color: '$background',
   background: '$primary',
   border: '1px solid $primary',
@@ -60,8 +20,4 @@ export const Button = styled('button', {
     color: '$blue',
     outline: 'none'
   }
-});
-
-export const Error = styled('p', {
-  color: '$red'
 });
