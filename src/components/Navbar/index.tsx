@@ -55,9 +55,16 @@ export const Navbar = () => {
                     {isHovered && (
                       <Hover
                         layoutId='nav'
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
+                        initial={{ y: 0 }}
+                        animate={{
+                          y: -1,
+                          transition: {
+                            type: 'tween',
+                            repeat: 1,
+                            repeatType: 'reverse'
+                          }
+                        }}
+                        exit={{ y: 0 }}
                       />
                     )}
                     {t(page)}

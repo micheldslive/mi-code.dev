@@ -11,7 +11,8 @@ import {
   Input,
   Label,
   Textarea,
-  Toast
+  Toast,
+  Error
 } from '@/components';
 import { api } from '@/lib/api';
 import { useI18n } from '@/locales';
@@ -77,12 +78,12 @@ export const ContactTemplate = ({
           <FormGroup>
             <Label htmlFor='name'>{t('labels.name')}</Label>
             <Input placeholder='Aylla Maria' {...register('name')} />
-            {errors.name && <p>{errors.name.message}</p>}
+            {errors.name && <Error>{errors.name.message}</Error>}
           </FormGroup>
           <FormGroup>
             <Label htmlFor='email'>{t('labels.email')}</Label>
             <Input placeholder='aylla@maria.com' {...register('email')} />
-            {errors.email && <p>{errors.email.message}</p>}
+            {errors.email && <Error>{errors.email.message}</Error>}
           </FormGroup>
           <FormGroup>
             <Label htmlFor='message'>{t('labels.message')}</Label>
@@ -91,7 +92,7 @@ export const ContactTemplate = ({
               rows={4}
               {...register('message')}
             />
-            {errors.message && <p>{errors.message.message}</p>}
+            {errors.message && <Error>{errors.message.message}</Error>}
           </FormGroup>
           <FormGroup>
             <Button type='submit'>Send</Button>

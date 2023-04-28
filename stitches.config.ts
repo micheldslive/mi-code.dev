@@ -15,13 +15,15 @@ export const {
       yellow: '#ffff80',
       pink: '#ff80bf',
       purple: '#9580ff',
-      red: '#ff9580',
+      red: '#ed4337',
       orange: '#ffca80',
       green: '#8aff80',
       cyan: '#80ffea',
+      blue: '#3378ff',
       primary: '#f2f2f2',
       secondary: '#8f9ba8',
       background: '#08070b',
+      bgscroll: '#151413',
       hover: '#212024',
       command: 'rgba(255, 255, 255, 0.05)',
       linkedin: '#0077b5',
@@ -68,13 +70,15 @@ export const darkTheme = createTheme('dark', {
     yellow: '#ffff80',
     pink: '#ff80bf',
     purple: '#9580ff',
-    red: '#ff9580',
+    red: '#ed4337',
     orange: '#ffca80',
     green: '#8aff80',
     cyan: '#80ffea',
+    blue: '#3378ff',
     primary: '#0d0d0d',
     secondary: '#706457',
     background: '#f7f8f4',
+    bgscroll: '#151413',
     hover: '#dedfdb',
     command: 'rgba(0, 0, 0, 0.05)',
     linkedin: '#0077b5',
@@ -102,7 +106,7 @@ const globalStyles = globalCss({
     width: '0.375rem'
   },
   '::-webkit-scrollbar-track': {
-    background: '#151417'
+    background: '$bgscroll'
   },
   '::-webkit-scrollbar-thumb': {
     backgroundColor: '$primary',
