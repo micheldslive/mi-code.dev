@@ -11,9 +11,9 @@ export default async function SendMail(
       const data: IEmailInputs = req.body;
 
       const mailTransporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
+        host: 'smtp-mail.outlook.com',
         port: 465,
-        service: 'gmail',
+        service: 'hotmail',
         auth: {
           user: process.env.NODEMAILER_USER,
           pass: process.env.NODEMAILER_PASSWORD
@@ -30,7 +30,8 @@ export default async function SendMail(
         ${data.message}`
       };
 
-      await mailTransporter.sendMail(mailDetails);
+      const teste = await mailTransporter.sendMail(mailDetails);
+      console.log(teste);
       return res.status(200).json({ message: 'Email sent' });
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (err: any) {
