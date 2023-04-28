@@ -55,12 +55,28 @@ export const FeaturedProject = ({
         {stats && <Stats>{stats}</Stats>}
       </Body>
       {isHovered && (
-        <Hover
-          layoutId='projects'
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        />
+        <>
+          {/* <Hover
+            layoutId='projects'
+            initial={{ translate: 0 }}
+            animate={{ opacity: 1, translate: 1 }}
+            exit={{ opacity: 0 }}
+          /> */}
+
+          <Hover
+            layoutId='projects'
+            initial={{ y: 0, opacity: 1 }}
+            animate={{
+              y: 5,
+              transition: {
+                type: 'tween',
+                repeat: 1,
+                repeatType: 'reverse'
+              }
+            }}
+            exit={{ y: 0, opacity: 0 }}
+          />
+        </>
       )}
     </StyledProject>
   );

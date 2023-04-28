@@ -27,7 +27,7 @@ export const Input = styled('input', {
   padding: '0.625rem',
   height: '2rem',
   fontSize: '0.95rem',
-  '&:focus': { outline: 'none', borderColor: '$purple' }
+  '&:focus': { outline: 'none', borderColor: '$blue' }
 });
 
 export const Textarea = styled('textarea', {
@@ -37,13 +37,13 @@ export const Textarea = styled('textarea', {
   borderRadius: '$borderRadius',
   padding: '0.625rem',
   fontSize: '0.95rem',
-  '&:focus': { outline: 'none', borderColor: '$purple' }
+  '&:focus': { outline: 'none', borderColor: '$blue' }
 });
 
 export const Button = styled('button', {
   color: '$background',
-  background: '#fff',
-  border: '1px solid #fff',
+  background: '$primary',
+  border: '1px solid $primary',
   borderRadius: '$borderRadius',
   cursor: 'pointer',
   padding: '0.625rem',
@@ -51,13 +51,17 @@ export const Button = styled('button', {
   transition: 'all 0.2s ease-in-out',
   '&:hover': {
     background: 'transparent',
-    borderColor: '$purple',
-    color: '$purple'
+    borderColor: '$blue',
+    color: '$blue'
   },
   '&:focus': {
     background: 'transparent',
-    borderColor: '$purple',
-    color: '$purple',
+    borderColor: '$blue',
+    color: '$blue',
     outline: 'none'
   }
+});
+
+export const Error = styled('p', {
+  color: '$red'
 });
