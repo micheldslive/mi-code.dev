@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
 import { type IEmailInputs } from '@/schemas';
 
-export default async function SendMail(
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
@@ -12,7 +12,7 @@ export default async function SendMail(
 
       const mailTransporter = nodemailer.createTransport({
         host: 'smtp-mail.outlook.com',
-        port: 465,
+        port: 587,
         service: 'hotmail',
         auth: {
           user: process.env.NODEMAILER_USER,
@@ -30,14 +30,10 @@ export default async function SendMail(
         ${data.message}`
       };
 
-      const teste = await mailTransporter.sendMail(mailDetails);
-      console.log(teste);
+      await mailTransporter.sendMail(mailDetails);
       return res.status(200).json({ message: 'Email sent' });
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    } catch (err: any) {
-      res
-        .status(500)
-        .json({ message: `Email not sent - Error: ${err.message}` });
+    } catch (err) {
+      res.status(500).json({ message: `Email not sent - Error: ${err}` });
     }
   }
   return res.status(405).json({ message: 'Method not allowed' });
