@@ -1,5 +1,6 @@
-import { getLocaleProps } from '@/locales';
-import { ProjectsTemplate, type ProjectsProps } from '@/templates';
+import { ProjectsTemplate, type ProjectsProps } from '@/src/templates';
+import { type GetStaticProps } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const Projects = (pageProps: ProjectsProps) => {
   return <ProjectsTemplate {...pageProps} />;
@@ -7,12 +8,15 @@ const Projects = (pageProps: ProjectsProps) => {
 
 export default Projects;
 
-export const getStaticProps = getLocaleProps(() => {
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const meta = {
-    tagline: 'Apps. Libs. Open Source.',
     primaryColor: 'cyan',
     secondaryColor: 'green'
   };
-
-  return { props: meta };
-});
+  return {
+    props: {
+      ...meta,
+      ...(await serverSideTranslations(locale ?? 'pt'))
+    }
+  };
+};

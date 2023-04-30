@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
   i18n: {
     locales: ['en', 'pt'],
-    defaultLocale: 'en'
+    defaultLocale: 'pt'
   },
   webpack(config) {
     config.module.rules.push({

@@ -3,7 +3,7 @@ import { useFrame } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
 import { inSphere } from 'maath/random';
 import { type Points as TPoints } from 'three';
-import { useThemeState } from '@/stores';
+import { useThemeState } from '@/src/stores';
 
 export const StarsContent = () => {
   const { dark } = useThemeState();

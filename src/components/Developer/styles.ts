@@ -1,4 +1,4 @@
-import { styled } from '@/root/stitches.config';
+import { styled } from '@/stitches.config';
 
 export const SvgContent = styled('span', {
   'svg': {
@@ -9,23 +9,23 @@ export const SvgContent = styled('span', {
   },
   /* ----------------- COLORS DEV --------------------- */
 
-  '.developer_svg__path220': {
+  '.path220': {
     fill: '$legs'
   },
 
-  '.developer_svg__path228': {
+  '.path228': {
     fill: '$legs'
   },
 
-  '.developer_svg__path186': {
+  '.path186': {
     fill: '$legsin'
   },
 
-  '.developer_svg__path206': {
+  '.path206': {
     fill: '$notebook'
   },
 
-  '.developer_svg__path215': {
+  '.path215': {
     fill: '$milogo'
   }
 });

@@ -1,4 +1,4 @@
-import { styled } from '@/root/stitches.config';
+import { styled } from '@/stitches.config';
 
 export const PostMain = styled('main', {
   '@bp2': { padding: '$navHeightDesktop 0' },

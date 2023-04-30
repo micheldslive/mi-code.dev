@@ -1,44 +1,43 @@
 import Head from 'next/head';
-import { Base, AllProjects, FeaturedProjects } from '@/components';
-import { projects } from '@/data/projects';
-import { useI18n } from '@/locales';
-import { getTotalProjects, stripHtml } from '@/utils';
+import { Base, AllProjects, FeaturedProjects } from '@/src/components';
+import { projects } from '@/src/data/projects';
+import { useTranslation } from 'next-i18next';
+import { getTotalProjects, stripHtml } from '@/src/utils';
+import { featured } from '@/src/data';
+import { type DefaultProps } from '@/src/@types/types';
 
-export interface ProjectsProps {
-  tagline: string;
-  primaryColor: string;
-  secondaryColor: string;
-}
+export type ProjectsProps = DefaultProps;
 
 export const ProjectsTemplate = ({
   primaryColor,
-  secondaryColor,
-  tagline
+  secondaryColor
 }: ProjectsProps) => {
   const totalProjects = getTotalProjects(projects);
-
-  const { scopedT } = useI18n();
-  const t = scopedT('pages.projects');
+  const { t } = useTranslation();
 
   return (
     <Base
-      tagline={tagline}
-      title={t('title')}
+      tagline={t('pages.projects.tagline')}
+      title={t('pages.projects.title')}
       primaryColor={primaryColor}
       secondaryColor={secondaryColor}
     >
       <Head>
-        <title>{t('title')}</title>
-        <meta content={t('title')} property='og:title' />
+        <title>{t('pages.projects.title')}</title>
+        <meta content={t('pages.projects.title')} property='og:title' />
         <meta
           content={stripHtml(
-            t('description', { totalProjects: String(totalProjects) })
+            t('pages.projects.description', {
+              totalProjects: String(totalProjects)
+            })
           )}
           name='description'
         />
         <meta
           content={stripHtml(
-            t('description', { totalProjects: String(totalProjects) })
+            t('pages.projects.description', {
+              totalProjects: String(totalProjects)
+            })
           )}
           property='og:description'
         />
@@ -50,22 +49,16 @@ export const ProjectsTemplate = ({
 
       <p
         dangerouslySetInnerHTML={{
-          __html: t('description', { totalProjects: String(totalProjects) })
+          __html: t('pages.projects.description', {
+            totalProjects: String(totalProjects)
+          })
         }}
       />
 
-      <h2>{t('featured')}</h2>
-      <FeaturedProjects
-        featured={[
-          'Personal Portfolio',
-          'Weather',
-          'Books',
-          'Movies',
-          'mi-calendar'
-        ]}
-      />
+      <h2>{t('pages.projects.featured')}</h2>
+      <FeaturedProjects featured={featured} />
 
-      <h2>{t('all')}</h2>
+      <h2>{t('pages.projects.all')}</h2>
       <AllProjects />
     </Base>
   );

@@ -1,8 +1,8 @@
 import Lottie from 'lottie-react';
 import lottieAnimation from '@/public/static/icons/404.json';
-import { Layout } from '@/components';
+import { Layout } from '@/src/components';
 import { Box } from './style';
-import { ShortcutError } from '@/components';
+import { ShortcutError } from '@/src/components';
 
 export const NotFoundTemplate = () => {
   return (

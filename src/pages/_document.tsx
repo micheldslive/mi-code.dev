@@ -1,12 +1,12 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
-import { getCssText } from '@/root/stitches.config';
+import { getCssText } from '@/stitches.config';
 
 export default class MyDocument extends Document {
   render() {
-    const lang = this.props.__NEXT_DATA__.props.pageProps?.post?.lang;
+    const lang = this.props.__NEXT_DATA__.props.pageProps?.post?.locale;
 
     return (
-      <Html lang={lang ? lang : 'en-US'}>
+      <Html lang={lang ? lang : 'pt'}>
         <Head>
           <meta charSet='utf-8' />
           <meta content='Michel Domingos' name='author' />

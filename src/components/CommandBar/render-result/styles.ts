@@ -1,4 +1,4 @@
-import { styled } from '@/root/stitches.config';
+import { styled } from '@/stitches.config';
 
 export const GroupName = styled('div', {
   padding: '0.5rem 1rem',

@@ -1,13 +1,13 @@
 import { useKBar } from 'kbar';
 import { useEffect, useState } from 'react';
-import { useI18n } from '@/locales';
-import { GeneralButton } from '@/components';
+import { GeneralButton } from '@/src/components';
+import { useTranslation } from 'next-i18next';
+import parse from 'html-react-parser';
 
 export const OpenCommandPalette = () => {
   const { query } = useKBar();
   const [mounted, setMounted] = useState(false);
-  const { scopedT } = useI18n();
-  const t = scopedT('common.kbar.start');
+  const { t } = useTranslation();
 
   useEffect(() => {
     setMounted(true);
@@ -20,20 +20,19 @@ export const OpenCommandPalette = () => {
     if (isMobile) {
       return (
         <GeneralButton type='button' onClick={query.toggle}>
-          {t('mobile')}
+          {t('common.kbar.start.mobile')}
         </GeneralButton>
       );
     }
     if (isMac) {
       return (
         <GeneralButton type='button' onClick={query.toggle}>
-          {t('mac', {
-            keys: (
-              <>
-                <kbd>⌘</kbd> <kbd>K</kbd>
-              </>
-            )
-          })}
+          {parse(
+            t('common.kbar.start.desktop', {
+              cmd: '⌘',
+              key: 'K'
+            })
+          )}
         </GeneralButton>
       );
     }
@@ -41,13 +40,12 @@ export const OpenCommandPalette = () => {
     // (Windows, Linux)
     return (
       <GeneralButton type='button' onClick={query.toggle}>
-        {t('pc', {
-          keys: (
-            <>
-              <kbd>ctrl</kbd> <kbd>K</kbd>
-            </>
-          )
-        })}
+        {parse(
+          t('common.kbar.start.desktop', {
+            cmd: 'ctrl',
+            key: 'K'
+          })
+        )}
       </GeneralButton>
     );
   }

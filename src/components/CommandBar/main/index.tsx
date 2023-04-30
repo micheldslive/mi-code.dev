@@ -12,7 +12,7 @@ import {
   useCallback
 } from 'react';
 import { RiGithubLine, RiInstagramLine, RiLinkedinLine } from 'react-icons/ri';
-import { RenderResults, Toast } from '@/components';
+import { RenderResults, Toast } from '@/src/components';
 import { Animator, Positioner, Search } from './styles';
 
 import aboutIcon from '@/public/static/icons/about.json';
@@ -21,9 +21,19 @@ import emailIcon from '@/public/static/icons/email.json';
 import homeIcon from '@/public/static/icons/home.json';
 import projectsIcon from '@/public/static/icons/projects.json';
 import sourceIcon from '@/public/static/icons/source.json';
-import { useI18n } from '@/locales';
+import { useTranslation } from 'next-i18next';
 
-export function CommandBar({ children }: PropsWithChildren) {
+type ActionType = {
+  id: string;
+  name: string;
+  shortcut: string[];
+  keywords: string;
+  section: string;
+  perform: () => void;
+  icon: ReactElement<LottieComponentProps> | ReactElement;
+};
+
+export function CommandBarProvider({ children }: PropsWithChildren) {
   const copyLinkRef = useRef<LottieRefCurrentProps>(null);
   const emailRef = useRef<LottieRefCurrentProps>(null);
   const sourceRef = useRef<LottieRefCurrentProps>(null);
@@ -34,8 +44,7 @@ export function CommandBar({ children }: PropsWithChildren) {
   const router = useRouter();
   const [showToast, setShowToast] = useState(false);
 
-  const { scopedT } = useI18n();
-  const t = scopedT('common.kbar');
+  const { t } = useTranslation();
 
   const copyUrl = useCallback(() => {
     void navigator.clipboard.writeText(window.location.href);
@@ -44,23 +53,13 @@ export function CommandBar({ children }: PropsWithChildren) {
 
   const iconStyle = { width: 24, height: 24 };
 
-  type ActionType = {
-    id: string;
-    name: string;
-    shortcut: string[];
-    keywords: string;
-    section: string;
-    perform: () => void;
-    icon: ReactElement<LottieComponentProps> | ReactElement;
-  };
-
   const actions: ActionType[] = [
     {
       id: 'home',
-      name: t('actions.home'),
+      name: t('common.kbar.actions.home'),
       shortcut: ['g', 'h'],
       keywords: 'go-home',
-      section: t('sections.goto'),
+      section: t('common.kbar.sections.goto'),
       perform: () => void router.push('/'),
       icon: (
         <Lottie
@@ -74,10 +73,10 @@ export function CommandBar({ children }: PropsWithChildren) {
     },
     {
       id: 'about',
-      name: t('actions.about'),
+      name: t('common.kbar.actions.about'),
       shortcut: ['g', 'a'],
       keywords: 'go-about',
-      section: t('sections.goto'),
+      section: t('common.kbar.sections.goto'),
       perform: () => void router.push('/about'),
       icon: (
         <Lottie
@@ -91,10 +90,10 @@ export function CommandBar({ children }: PropsWithChildren) {
     },
     {
       id: 'projects',
-      name: t('actions.projects'),
+      name: t('common.kbar.actions.projects'),
       shortcut: ['g', 'p'],
       keywords: 'go-projects',
-      section: t('sections.goto'),
+      section: t('common.kbar.sections.goto'),
       perform: () => void router.push('/projects'),
       icon: (
         <Lottie
@@ -108,10 +107,10 @@ export function CommandBar({ children }: PropsWithChildren) {
     },
     {
       id: 'copy',
-      name: t('actions.copy'),
+      name: t('common.kbar.actions.copy'),
       shortcut: ['u'],
       keywords: 'copy-url',
-      section: t('sections.general'),
+      section: t('common.kbar.sections.general'),
       perform: copyUrl,
       icon: (
         <Lottie
@@ -125,10 +124,10 @@ export function CommandBar({ children }: PropsWithChildren) {
     },
     {
       id: 'email',
-      name: t('actions.email'),
+      name: t('common.kbar.actions.email'),
       shortcut: ['e'],
       keywords: 'send-email',
-      section: t('sections.general'),
+      section: t('common.kbar.sections.general'),
       perform: () => void router.push('/contact'),
       icon: (
         <Lottie
@@ -142,10 +141,10 @@ export function CommandBar({ children }: PropsWithChildren) {
     },
     {
       id: 'source',
-      name: t('actions.source'),
+      name: t('common.kbar.actions.source'),
       shortcut: ['s'],
       keywords: 'view-source',
-      section: t('sections.general'),
+      section: t('common.kbar.sections.general'),
       perform: () =>
         window.open('https://github.com/micheldslive/micode.dev', '_blank'),
       icon: (
@@ -163,7 +162,7 @@ export function CommandBar({ children }: PropsWithChildren) {
       name: 'GitHub',
       shortcut: ['f', 'g'],
       keywords: 'go-github',
-      section: t('sections.follow'),
+      section: t('common.kbar.sections.follow'),
       perform: () => window.open('https://github.com/micheldslive', '_blank'),
       icon: <RiGithubLine />
     },
@@ -172,7 +171,7 @@ export function CommandBar({ children }: PropsWithChildren) {
       name: 'LinkedIn',
       shortcut: ['f', 'l'],
       keywords: 'go-linkedin',
-      section: t('sections.follow'),
+      section: t('common.kbar.sections.follow'),
       perform: () =>
         window.open('https://linkedin.com/in/micheldslive', '_blank'),
       icon: <RiLinkedinLine />
@@ -182,7 +181,7 @@ export function CommandBar({ children }: PropsWithChildren) {
       name: 'Instagram',
       shortcut: ['f', 'i'],
       keywords: 'go-instagram',
-      section: t('sections.follow'),
+      section: t('common.kbar.sections.follow'),
       perform: () =>
         window.open('https://www.instagram.com/micheldslive', '_blank'),
       icon: <RiInstagramLine />
@@ -205,8 +204,8 @@ export function CommandBar({ children }: PropsWithChildren) {
       </KBarProvider>
 
       <Toast
-        title={t('toast.title')}
-        description={t('toast.description')}
+        title={t('common.kbar.toast.title')}
+        description={t('common.kbar.toast.description')}
         isSuccess
         showToast={showToast}
         setShowToast={setShowToast}
