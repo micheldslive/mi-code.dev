@@ -1,5 +1,5 @@
 import { KBarAnimator, KBarPositioner, KBarSearch } from 'kbar';
-import { styled } from '@/root/stitches.config';
+import { styled } from '@/stitches.config';
 
 export const Positioner = styled(KBarPositioner, {
   position: 'fixed',

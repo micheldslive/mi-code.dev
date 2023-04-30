@@ -18,12 +18,12 @@ const customJestConfig = {
   setupFilesAfterEnv: ['<rootDir>/.jest/jest.setup.ts'],
   modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],
   preset: 'ts-jest',
+  setupFiles: ['jest-canvas-mock'],
   bail: 1,
   moduleNameMapper: {
     '^.+\\.(css|less|scss)$': 'babel-jest',
-    '\\.svg$': '<rootDir>/.jest/svg.ts',
-    '@/(.*)': '<rootDir>/src/$1',
-    '@/public/(.*)': '<rootDir>/public/$1'
+    '\\.svg$': '<rootDir>/.jest/mocks/svgMock.ts',
+    '@/(.*)': '<rootDir>/$1'
   }
 };
 

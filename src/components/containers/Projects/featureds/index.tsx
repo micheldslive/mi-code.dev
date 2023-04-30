@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useI18n } from '@/locales';
-import { FeaturedProject } from '@/components';
+import { useTranslation } from 'next-i18next';
+import { FeaturedProject } from '@/src/components';
 import { StyledFeaturedProjects } from './styles';
 
 type Projects = {
@@ -25,41 +25,40 @@ interface FeaturedProjectsProps {
 
 export const FeaturedProjects = ({ featured }: FeaturedProjectsProps) => {
   const [isHovered, setIsHovered] = useState('');
-  const { scopedT } = useI18n();
-  const t = scopedT('pages.projects');
+  const { t } = useTranslation();
 
   const projects: Projects = [
     {
       year: '2022',
       projects: [
         {
-          title: t('portfolio.title'),
+          title: t('pages.projects.portfolio.title'),
           url: 'https://github.com/micheldslive/micode.dev',
-          description: t('portfolio.description'),
+          description: t('pages.projects.portfolio.description'),
           iconName: 'assignment'
         },
         {
-          title: t('books.title'),
+          title: t('pages.projects.books.title'),
           url: 'https://books-challenge-micode.vercel.app/',
-          description: t('books.description'),
+          description: t('pages.projects.books.description'),
           iconName: 'book'
         },
         {
-          title: t('weather.title'),
+          title: t('pages.projects.weather.title'),
           url: 'https://weather-tds.netlify.app/',
-          description: t('weather.description'),
+          description: t('pages.projects.weather.description'),
           iconName: 'weather'
         },
         {
-          title: t('movies.title'),
+          title: t('pages.projects.movies.title'),
           url: 'https://movies-challenge-dot.vercel.app/',
-          description: t('movies.description'),
+          description: t('pages.projects.movies.description'),
           iconName: 'movie'
         },
         {
-          title: t('calendar.title'),
+          title: t('pages.projects.calendar.title'),
           url: 'https://mi-calendar.vercel.app/',
-          description: t('calendar.description'),
+          description: t('pages.projects.calendar.description'),
           iconName: 'calendar',
           width: 41,
           height: 41,
@@ -70,7 +69,7 @@ export const FeaturedProjects = ({ featured }: FeaturedProjectsProps) => {
   ];
 
   return (
-    <StyledFeaturedProjects>
+    <StyledFeaturedProjects aria-label='featuredProjects'>
       {projects
         .map(item => {
           return item.projects.filter(project =>

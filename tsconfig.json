@@ -16,9 +16,7 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["src/*"],
-      "@/public/*": ["public/*"],
-      "@/root/*": ["./*"]
+      "@/*": ["./*"]
     }
   },
   "include": [
@@ -27,7 +25,10 @@
     "**/*.tsx",
     ".jest/jest.setup.ts",
     ".eslintrc.cjs",
-    "next.config.mjs"
+    "next.config.mjs",
+    "i18n.d.ts",
+    "i18n.ts",
+    "next-i18next.config.js"
   ],
   "exclude": ["node_modules"]
 }

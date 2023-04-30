@@ -1,6 +1,6 @@
 import { format, parseISO } from 'date-fns';
-import { jobs } from '@/data';
-import { getDurationString } from '@/utils';
+import { jobs } from '@/src/data';
+import { getDurationString } from '@/src/utils';
 
 export interface Job {
   jobTitle: string;
@@ -19,7 +19,7 @@ export const Career = () => {
           { company, companyUrl, jobTitle, location, startDate, endDate },
           index
         ) => (
-          <article style={{ marginBottom: 40 }} key={index}>
+          <article style={{ marginBottom: 40 }} key={index} aria-label='career'>
             <h3>{jobTitle}</h3>
             <p style={{ margin: 0 }}>
               <a href={companyUrl} target='_blank' rel='noreferrer'>

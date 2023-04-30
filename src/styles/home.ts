@@ -1,4 +1,4 @@
-import { styled } from '@/root/stitches.config';
+import { styled } from '@/stitches.config';
 
 export const Title = styled('h1', {
   background: 'linear-gradient(90deg, #9442FE, #3378FF)',

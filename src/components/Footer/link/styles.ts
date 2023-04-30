@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { styled } from '@/root/stitches.config';
+import { styled } from '@/stitches.config';
 
 export const Anchor = styled(Link, {
   color: '$secondary',

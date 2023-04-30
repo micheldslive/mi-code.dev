@@ -1,10 +1,10 @@
 import { SvgContent } from './styles';
-import SvgDeveloper from '@/public/static/images/developer.svg';
+import { DeveloperIcon } from './icon';
 
 export const Developer = () => {
   return (
     <SvgContent>
-      <SvgDeveloper />
+      <DeveloperIcon />
     </SvgContent>
   );
 };

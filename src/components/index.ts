@@ -1,10 +1,10 @@
-export * from './Base';
+export * from './Base/base';
 export * from './CommandBar';
 export * from './containers';
 export * from './FeaturedProject';
 export * from './Footer/main';
 export * from './Layout';
-export * from './Navbar';
+export * from './Navbar/navbar';
 export * from './OpenCommandPalette';
 export * from './ShortcutError';
 export * from './Stars';
@@ -12,3 +12,4 @@ export * from './styled';
 export * from './Toast';
 export * from './Developer';
 export * from './Themming';
+export * from './Logo';

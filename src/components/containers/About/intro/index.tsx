@@ -1,13 +1,12 @@
 import Image from 'next/image';
-import { useI18n } from '@/locales';
 import { Container, Section } from './styles';
+import { useTranslation } from 'next-i18next';
 
 export const Intro = () => {
-  const { scopedT } = useI18n();
-  const t = scopedT('pages.about');
+  const { t } = useTranslation();
 
   return (
-    <Container>
+    <Container aria-label='intro'>
       <Section>
         <Image
           alt='Michel Domingos'
@@ -20,9 +19,9 @@ export const Intro = () => {
         />
       </Section>
       <Section>
-        <h2>{t('bio')}</h2>
+        <h2>{t('pages.about.bio')}</h2>
         <blockquote>
-          <p>{t('description')}</p>
+          <p>{t('pages.about.description')}</p>
         </blockquote>
       </Section>
     </Container>

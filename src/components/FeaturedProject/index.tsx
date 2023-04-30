@@ -1,6 +1,6 @@
 import Lottie, { type LottieRefCurrentProps } from 'lottie-react';
 import { type Dispatch, type SetStateAction, useRef } from 'react';
-import type { Project } from '@/data';
+import type { Project } from '@/src/data';
 import {
   Body,
   Description,
@@ -37,6 +37,7 @@ export const FeaturedProject = ({
       data-testid='featuredProject'
       onMouseEnter={() => iconRef.current?.play()}
       onMouseLeave={() => iconRef.current?.stop()}
+      aria-label='featuredProject'
     >
       <Lottie
         lottieRef={iconRef}

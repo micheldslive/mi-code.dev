@@ -1,5 +1,6 @@
-import { getLocaleProps } from '@/locales';
-import { AboutTemplate, type AboutProps } from '@/templates';
+import { AboutTemplate, type AboutProps } from '@/src/templates';
+import { type GetStaticProps } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const About = (pageProps: AboutProps) => {
   return <AboutTemplate {...pageProps} />;
@@ -7,12 +8,17 @@ const About = (pageProps: AboutProps) => {
 
 export default About;
 
-export const getStaticProps = getLocaleProps(() => {
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const meta = {
     imagePath: '/static/imagePaths/micheldslive.jpg',
     primaryColor: 'pink',
     secondaryColor: 'purple'
   };
 
-  return { props: meta };
-});
+  return {
+    props: {
+      ...meta,
+      ...(await serverSideTranslations(locale ?? 'pt'))
+    }
+  };
+};

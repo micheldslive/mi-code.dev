@@ -1,0 +1,109 @@
+{
+  "common": {
+    "navbar": {
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+
+    "kbar": {
+      "start": {
+        "mobile": "Tap to start →",
+        "desktop": "Press <kbd>{{cmd}}</kbd> <kbd>{{key}}</kbd> to start →"
+      },
+
+      "actions": {
+        "copy": "Copy URL",
+        "email": "Send Email",
+        "source": "View Source",
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects"
+      },
+
+      "sections": {
+        "general": "General",
+        "goto": "Go To",
+        "follow": "Follow"
+      },
+      "toast": {
+        "title": "Copied :D",
+        "description": "You can now share it with anyone."
+      }
+    }
+  },
+
+  "pages": {
+    "home": {
+      "title": "Michel Domingos",
+      "meta": {
+        "1": "FrontEnd Engineer.",
+        "2": "BackEnd Developer.",
+        "3": "FullStack Developer."
+      },
+      "description": "A guy who loves helping people and making the world a better place."
+    },
+    "about": {
+      "title": "About | Michel Domingos",
+      "bio": "Bio",
+      "description": "I started at DevWorld with PHP in 2015, and since then I've been on this road as a Developer. In early 2021, I started working with Javascript, so the passion for this language and its Frameworks emerged. My focus is Front-end Development, but I also have a great facility with Back-end Development.",
+      "tagline": "Code. Sleep. Repeat.",
+      "career": "Career"
+    },
+    "projects": {
+      "tagline": "Apps, Challenges and more",
+      "title": "Projects | Michel Domingos",
+      "description": "Side projects are a way to convert your <strong>thoughts and personality</strong> into code. Here you can see the different <strong>{{totalProjects}}</strong> projects I've been working on.",
+      "featured": "Featured Projects",
+      "all": "All Projects",
+
+      "portfolio": {
+        "title": "Personal Portfolio",
+        "description": "This portfolio. It's open source!"
+      },
+      "books": {
+        "title": "Books",
+        "description": "Project carried out to create an authentication environment."
+      },
+      "weather": {
+        "title": "Weather",
+        "description": "Project carried out to read weather information when choosing a specific city."
+      },
+      "movies": {
+        "title": "Movies",
+        "description": "Project carried out to consume data from the TMDB api and create a store with a list of products."
+      },
+      "calendar": {
+        "title": "mi-calendar",
+        "description": "Nextjs case study project + react-scheduler."
+      }
+    },
+    "contact": {
+      "title": "Contact | Michel Domingos",
+      "tagline": "Email me. As in the good old days.",
+      "description": "<strong>I love talking</strong> with other developers, students, and newbies. <strong>I'm a pretty busy guy</strong> so I can't promise that I'll answer your email on time, but I'll do my best to get back to you ASAP.",
+      "email": "Send an email",
+
+      "toast": {
+        "success": {
+          "title": "Email sent :P",
+          "description": "Thanks for taking the time to write it."
+        },
+        "fail": {
+          "title": "Error :(",
+          "description": "Something wrong happened. Try again later."
+        }
+      },
+
+      "labels": {
+        "name": "name",
+        "email": "email",
+        "message": "message"
+      },
+      "placeholders": {
+        "message": "Your message here :D"
+      },
+      "send": "Send"
+    }
+  }
+}

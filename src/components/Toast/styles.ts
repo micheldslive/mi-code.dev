@@ -1,5 +1,5 @@
 import * as ToastPrimitive from '@radix-ui/react-toast';
-import { keyframes, styled } from '@/root/stitches.config';
+import { keyframes, styled } from '@/stitches.config';
 
 const slideUpAndFade = keyframes({
   '0%': { opacity: 0, transform: 'translateY(1.25rem)' },

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { styled } from '@/root/stitches.config';
+import { styled } from '@/stitches.config';
 
 export const Hover = styled(motion.span, {
   position: 'absolute',

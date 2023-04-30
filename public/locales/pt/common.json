@@ -1,0 +1,110 @@
+{
+  "common": {
+    "navbar": {
+      "about": "Sobre",
+      "projects": "Projetos",
+      "contact": "Contato"
+    },
+
+    "kbar": {
+      "start": {
+        "mobile": "Toque para começar →",
+        "desktop": "Pressione <kbd>{{cmd}}</kbd> <kbd>{{key}}</kbd> para começar →"
+      },
+
+      "actions": {
+        "copy": "Copiar Link",
+        "email": "Enviar Email",
+        "source": "Ver Código Fonte",
+        "home": "Início",
+        "about": "Sobre",
+        "projects": "Projetos"
+      },
+
+      "sections": {
+        "general": "Geral",
+        "goto": "Ir Para",
+        "follow": "Seguir"
+      },
+      "toast": {
+        "title": "Copiado :D",
+        "description": "Agora você pode compartilhar com seus amigos."
+      }
+    }
+  },
+
+  "pages": {
+    "home": {
+      "title": "Michel Domingos",
+      "meta": {
+        "1": "Engenheiro FrontEnd.",
+        "2": "Desenvolvedor BackEnd.",
+        "3": "Desenvolvedor FullStack."
+      },
+      "description": "Um cara que ama ajudar as pessoas e tornar o mundo um lugar melhor."
+    },
+    "about": {
+      "title": "Sobre | Michel Domingos",
+      "bio": "Bio",
+      "description": "Iniciei no DevWorld com PHP em 2015, e desde então sigo nessa estrada como Desenvolvedor. No início de 2021, comecei a trabalhar com Javascript, então surgiu a paixão por essa linguagem e seus Frameworks. Meu foco é Desenvolvimento Front-end, mas também possuo uma ótima facilidade com Desenvolvimento Back-end.",
+      "tagline": "Codifique. Durma. Repita.",
+      "career": "Carreira"
+    },
+    "projects": {
+      "tagline": "Aplicativos, desafios entre outros",
+      "title": "Projetos | Michel Domingos",
+      "description": "Projetos paralelos são uma forma de converter seus <strong>pensamentos e personalidade</strong> em código. Aqui você pode ver os <strong>{{totalProjects}} diferentes</strong> projetos em que tenho trabalhado.",
+      "featured": "Projetos em Destaque",
+      "all": "Todos os projetos",
+
+      "portfolio": {
+        "title": "Personal Portfolio",
+        "description": "Meu portifolio Pessoal"
+      },
+      "books": {
+        "title": "Books",
+        "description": "Projeto realizado para criar um ambiente de autenticação."
+      },
+      "weather": {
+        "title": "Weather",
+        "description": "Projeto realizado para ler as informações do clima ao escolher uma cidade especifica."
+      },
+      "movies": {
+        "title": "Movies",
+        "description": "Projeto realizado para consumir dados da api do TMDB e criar uma loja com lista de produtos."
+      },
+      "calendar": {
+        "title": "mi-calendar",
+        "description": "Projeto de estudo de caso do nextjs + react-scheduler."
+      }
+    },
+    "contact": {
+      "title": "Contato | Michel Domingos",
+      "tagline": "Manda um email. Como nos velhos tempos.",
+      "description": "<strong>Amo conversar</strong> com outros desenvolvedores, estudantes e iniciantes no ramo. <strong>Sou um cara bastante ocupado</strong>, então não posso prometer que vou responder seu e-mail na hora, mas vou dar o meu melhor para responder o mais rápido possível.",
+      "email": "Mande um email",
+
+      "toast": {
+        "success": {
+          "title": "Email enviado :P",
+          "description": "Obrigado por separar um tempo para escrever."
+        },
+        "fail": {
+          "title": "Erro :(",
+          "description": "Algo deu errado. Tente novamente mais tarde."
+        }
+      },
+
+      "labels": {
+        "name": "nome",
+        "email": "email",
+        "message": "mensagem"
+      },
+      "placeholders": {
+        "message": "Sua mensagem aqui :P"
+      },
+
+      "send": "Enviar"
+    }
+  }
+}
