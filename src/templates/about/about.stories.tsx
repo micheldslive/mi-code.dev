@@ -3,7 +3,14 @@ import { AboutTemplate, type AboutProps } from '.';
 
 export default {
   title: 'Pages/About',
-  component: AboutTemplate
+  component: AboutTemplate,
+  argTypes: {
+    imagePath: {
+      table: {
+        disable: true
+      }
+    }
+  }
 } as Meta<AboutProps>;
 
 const Template: StoryFn<AboutProps> = args => {

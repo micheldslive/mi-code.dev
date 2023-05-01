@@ -10,7 +10,7 @@ import {
   Viewport
 } from './styles';
 
-interface ToastProps extends IconProps {
+export interface ToastProps extends IconProps {
   title: string;
   description: string;
   showToast: boolean;
@@ -29,9 +29,12 @@ export const Toast = ({
   return (
     <ToastPrimitive.Provider>
       {children}
-      <Root open={showToast} onOpenChange={setShowToast}>
+      <Root open={showToast} onOpenChange={setShowToast} aria-label='toast'>
         <IconContainer>
-          <Icon color={isSuccess ? '#4cb782' : '#b75c4c'} />
+          <Icon
+            fill={isSuccess ? '#4cb782' : '#b75c4c'}
+            isSuccess={isSuccess}
+          />
         </IconContainer>
         <div>
           <Title>{title}</Title>
