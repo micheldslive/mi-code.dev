@@ -3,7 +3,7 @@ import { DeveloperIcon } from './icon';
 
 export const Developer = () => {
   return (
-    <SvgContent>
+    <SvgContent aria-label='dev'>
       <DeveloperIcon />
     </SvgContent>
   );

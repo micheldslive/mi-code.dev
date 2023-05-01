@@ -124,8 +124,7 @@ const globalStyles = globalCss({
   },
   svg: {
     width: '2rem',
-    height: '2rem',
-    fill: 'white'
+    height: '2rem'
   },
   figure: {
     margin: 0

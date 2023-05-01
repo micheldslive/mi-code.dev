@@ -7,6 +7,7 @@ export const DeveloperIcon = () => {
       viewBox='320 -359.7 711.2 650.7'
       height='650.68268'
       width='711.1879'
+      aria-label='developerIcon'
     >
       <path
         className='path13'
