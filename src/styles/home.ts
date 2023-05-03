@@ -28,5 +28,6 @@ export const Content = styled('main', {
   padding: '0 1.25rem',
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'space-between'
+  justifyContent: 'space-between',
+  '@bp3': { flexDirection: 'column-reverse', justifyContent: 'center' }
 });

@@ -13,8 +13,6 @@ export const Intro = () => {
           src='/static/images/micheldslive.jpg'
           width='300'
           height='406'
-          placeholder='blur'
-          blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAARElEQVQImRXGoQ0AIRBFwXcki1iN2GIICXXSE4WsQyM+uVFDRMjMVGuVu+v7M+fknMPemyKJMQatNe69lLUWvXcyE4AHFPwXwbTvwncAAAAASUVORK5CYII='
           priority
         />
       </Section>

@@ -13,3 +13,4 @@ export * from './Toast/toast';
 export * from './Developer/developer';
 export * from './Themming';
 export * from './Logo';
+export * from './Language';
