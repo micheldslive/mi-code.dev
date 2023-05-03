@@ -12,7 +12,7 @@ import {
   Nav,
   NavContainer
 } from './styles';
-import { Themming, MiCodeLogo } from '@/src/components';
+import { Themming, MiCodeLogo, LanguageSelect } from '@/src/components';
 import { useTranslation } from 'next-i18next';
 
 export const pages = ['about', 'projects', 'contact'] as const;
@@ -71,6 +71,7 @@ export const Navbar = () => {
         </List>
       </Nav>
       <Aside>
+        <LanguageSelect />
         <Themming />
         <CmdButton type='button' aria-label='Command' onClick={query.toggle}>
           <CmdIcon />

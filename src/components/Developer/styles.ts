@@ -3,7 +3,7 @@ import { styled } from '@/stitches.config';
 export const SvgContent = styled('span', {
   'svg': {
     width: '100%',
-    height: '25rem',
+    height: '23rem',
     maxWidth: '25rem',
     fill: 'unset'
   },

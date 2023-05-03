@@ -14,5 +14,9 @@ export const Paragraph = styled('p', {
 export const Section = styled('section', {
   marginTop: '0px',
   width: 'auto',
+  'img': {
+    width: '100%',
+    height: 'auto'
+  },
   '@bp2': { width: '48%' }
 });

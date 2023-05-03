@@ -4,7 +4,7 @@ export const DeveloperIcon = () => {
       version='1.1'
       id='b52d7e2d-d80f-4111-b6ed-d15502ee1edd'
       xmlns='http://www.w3.org/2000/svg'
-      viewBox='320 -359.7 711.2 650.7'
+      viewBox='345 -359.7 711.2 650.7'
       height='650.68268'
       width='711.1879'
       aria-label='developerIcon'

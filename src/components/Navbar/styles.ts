@@ -62,7 +62,7 @@ export const Nav = styled('nav', {
   order: 2,
   flexBasis: '100%',
   '@bp2': { order: 0, flexBasis: 'initial' },
-  '@bp3': { overflowX: 'scroll', overflowY: 'hidden' }
+  '@bp4': { overflowX: 'scroll', overflowY: 'hidden' }
 });
 
 export const Aside = styled('div', {

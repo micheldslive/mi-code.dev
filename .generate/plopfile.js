@@ -34,7 +34,7 @@ module.exports = (plop) => {
         type: "append",
         path: "../src/components/index.ts",
         pattern: "",
-        template: "export * from './{{dashCase name}}'",
+        template: "export * from './{{dashCase name}}';",
         separator: ""
       },
     ],

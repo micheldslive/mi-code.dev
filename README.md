@@ -1,38 +1,132 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <img src="./.github/micode.png" width="30%">
+</p>
 
-## Getting Started
+<h1 align="center">
+  📰 Meu Portfólio 2023
+</h1>
 
-First, run the development server:
+<p align="center">
+  <img alt="Portfolio" src="https://img.shields.io/static/v1?label=books&message=MiCode&color=success&labelColor=grey">
+  
+  <img alt="Next" src="https://img.shields.io/static/v1?label=stack&message=nextjs&color=success&labelColor=grey">
+  
+  <img alt="2023" src="https://img.shields.io/static/v1?label=portfolio&message=MICODE&color=success&labelColor=grey">
+</p>
+
+## 💻 Sobre
+
+Este é o site do meu portfólio pessoal, apresentando alguns de meus projetos, habilidades e experiências como Dev.
+
+<p align="center">
+  <img src="./.github/demo.gif" />
+</p>
+
+---
+O projeto está disponível para visualização em https://micode-dev.vercel.app. <br>
+A documentação dos componentes está disponível para visualização em https://micode-dev-book.vercel.app.
+
+---
+
+### 🚀 Tecnologias
+
+O projeto foi desenvolvido com as seguintes tecnologias:
+
+- [NextJS](https://nextjs.org/)
+- [Stitches](https://stitches.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
+- [framer-motion](https://www.npmjs.com/package/framer-motion)
+- [Prettier](https://prettier.io/)
+- [Storybook](https://storybook.js.org/)
+- [Eslint](https://eslint.org/)
+- [husky](https://github.com/typicode/husky)
+- [i18next](https://www.i18next.com/)
+- [date-fns](https://date-fns.org/)
+- [react-three](https://www.npmjs.com/package/@react-three/drei)
+- [kbar](https://www.npmjs.com/package/kbar)
+- [lottie-react](https://lottiereact.com/)
+- [react-icons](https://react-icons.github.io/react-icons/)
+- [zustand](https://zustand-demo.pmnd.rs/)
+- [commitlint](https://www.npmjs.com/package/commitlint)
+- [plop](https://plopjs.com/)
+
+---
+
+### ▶️ Executando o projeto
+
+Siga os seguintes passos para poder utilizar a aplicação em sua máquina.
+
+1. Clone a aplicação em sua máquina local com os seguintes comandos:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+git clone https://github.com/micheldslive/micode-dev.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Depois, vá até o diretório do seu projeto utilizando o comando
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```bash
+cd micode-dev
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+3. Instale as dependências:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```bash
+pnpm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Rode sua aplicação em sua [conexão local](http://localhost:3000)
 
-## Learn More
+```bash
+pnpm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ▶️ Executando o projeto (Docker)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+##### Com o Docker devidamente instalado e o repositório Clonado, Execute o comando abaixo:
 
-## Deploy on Vercel
+```bash
+docker compose up
+```
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📚 Design System
+ Os principais componentes da aplicação foram documententados. Para acessá-los em sua máquina, rode o seguinte comando:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+pnpm storybook
+# ou
+yarn storybook
+```
+---
+### 📚 Testes
+Para realizar os testes rode os seguinte comando
+
+```bash
+pnpm test
+# ou
+yarn test
+```
+---
+
+## 💻 Desenvolvedor<br>
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/micheldslive">
+        <img src="https://avatars.githubusercontent.com/u/55795597?v=4" width="100" alt="Foto no GitHub"/><br>
+        <sub>
+          <b>Michel Domingos</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+### 🖊️ Licença
+
+O projeto é licenciado sobre a "MIT License" - Veja a pagina LICENÇA para mais destalhes.

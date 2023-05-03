@@ -56,7 +56,7 @@ export const PostContent = styled('div', {
     '@bp2': {
       marginLeft: 'calc(-1 * (70vw - 860px) / 2)'
     },
-    '@bp4': {
+    '@bp5': {
       marginLeft: 0
     }
   },
@@ -68,7 +68,7 @@ export const PostContent = styled('div', {
     '@bp2': {
       marginLeft: 'calc(-1 * (90vw - 860px) / 2)'
     },
-    '@bp4': {
+    '@bp5': {
       marginLeft: 0,
       flexDirection: 'column'
     }
@@ -77,9 +77,6 @@ export const PostContent = styled('div', {
     minWidth: '50%',
     '@bp2': {
       minWidth: '100%'
-    },
-    '@bp4': {
-      // marginLeft: 0,
     }
   },
   '& .side-by-side-caption': {

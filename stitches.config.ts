@@ -54,8 +54,10 @@ export const {
   media: {
     bp1: '(min-width: 425px)',
     bp2: '(min-width: 860px)',
-    bp3: '(max-width: 780px)',
-    bp4: '(max-width: 1024px)'
+    bp3: '(max-width: 860px)',
+    bp4: '(max-width: 780px)',
+    bp5: '(max-width: 1024px)',
+    bp6: '(min-width: 1024px)'
   },
   utils: {
     size: (value: string) => ({
