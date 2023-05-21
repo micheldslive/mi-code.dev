@@ -1,14 +1,13 @@
 import React, { useEffect } from 'react';
 import { StoryContext, StoryFn, type Preview } from '@storybook/react';
 import { I18nextProvider } from 'react-i18next';
-import { CommandBarProvider } from '../src/components';
+import { CommandBarProvider, ThemeProvider } from '../src/providers';
 import i18n from '../i18n';
-import { useThemeState } from '../src/stores';
-import { ThemeProvider } from '../src/styles';
+import { useTheme } from '../src/stores';
 
 const withThemeProvider = (Story: StoryFn, context: StoryContext) => {
   const { theme } = context.globals;
-  const { setDark } = useThemeState();
+  const { setDark } = useTheme();
 
   useEffect(() => {
     setDark(() => theme === 'light');
