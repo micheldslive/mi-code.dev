@@ -11,10 +11,5 @@ export const ThemeButton = styled('button', {
   cursor: 'pointer',
   padding: '0.35rem',
   transition: 'background $duration ease-in-out',
-  '&:hover': { background: '$hover' },
-  'svg': {
-    fill: '$primary',
-    width: '1.5rem',
-    height: '1.5rem'
-  }
+  '&:hover': { background: '$hover' }
 });

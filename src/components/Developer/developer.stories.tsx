@@ -2,7 +2,6 @@ import type { Meta, StoryFn } from '@storybook/react';
 import React from 'react';
 import { Developer } from '.';
 import { StoryBookContainer } from '@/src/components';
-import '../../styles/developer.css';
 
 export default {
   title: 'Components/Developer',

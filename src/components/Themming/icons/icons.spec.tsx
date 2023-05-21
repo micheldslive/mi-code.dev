@@ -3,13 +3,13 @@ import { render, screen } from '@testing-library/react';
 
 describe('<Themming Icons />', () => {
   test(`should by render a Moon`, () => {
-    render(<Moon />);
-    const title = screen.getByLabelText(/moon/i);
-    expect(title).toBeInTheDocument();
+    const { getByLabelText } = render(<Moon />);
+    const moon = getByLabelText(/moon/i);
+    expect(moon).toBeInTheDocument();
   });
   test(`should by render a Sun`, () => {
     render(<Sun />);
-    const title = screen.getByLabelText(/sun/i);
-    expect(title).toBeInTheDocument();
+    const sun = screen.getByLabelText(/sun/i);
+    expect(sun).toBeInTheDocument();
   });
 });

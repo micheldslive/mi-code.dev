@@ -13,4 +13,4 @@ export const userThemeStore = createStore<IThemeStore>()(set => ({
   setDark: updater => set(state => ({ dark: updater(state.dark) }))
 }));
 
-export const useThemeState = () => useStore(userThemeStore);
+export const useTheme = () => useStore(userThemeStore);

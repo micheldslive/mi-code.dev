@@ -1,8 +1,6 @@
 import type { AppProps } from 'next/app';
-import { CommandBarProvider } from '@/src/components';
-import { ThemeProvider } from '@/src/styles';
+import { CommandBarProvider, ThemeProvider } from '@/src/providers';
 import { appWithTranslation } from 'next-i18next';
-import '@/src/styles/developer.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
