@@ -1,5 +1,6 @@
 import type { Meta, StoryFn } from '@storybook/react';
-import { Toast, type ToastProps } from './toast';
+import { Toast } from './toast';
+import type { ToastProps } from '@/src/@types';
 import { useArgs } from '@storybook/client-api';
 
 export default {

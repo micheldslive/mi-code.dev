@@ -2,26 +2,7 @@ import { useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { FeaturedProject } from '@/src/components';
 import { StyledFeaturedProjects } from './styles';
-
-type Projects = {
-  year: string;
-  projects: Project[];
-}[];
-
-interface Project {
-  title: string;
-  url: string;
-  description?: string;
-  iconName?: string;
-  stats?: string;
-  width?: number;
-  height?: number;
-  margin?: string;
-}
-
-interface FeaturedProjectsProps {
-  featured: string[];
-}
+import type { FeaturedProjectsProps, Projects } from '@/src/@types';
 
 export const FeaturedProjects = ({ featured }: FeaturedProjectsProps) => {
   const [isHovered, setIsHovered] = useState('');

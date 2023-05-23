@@ -2,11 +2,7 @@ import Head from 'next/head';
 import { Base, Career, Intro } from '@/src/components';
 import { stripHtml } from '@/src/utils';
 import { useTranslation } from 'next-i18next';
-import { type DefaultProps } from '@/src/@types/types';
-
-export interface AboutProps extends DefaultProps {
-  imagePath: string;
-}
+import type { AboutProps } from '@/src/@types';
 
 export const AboutTemplate = ({
   imagePath,

@@ -1,12 +1,12 @@
 import type { Meta, StoryFn } from '@storybook/react';
-import { Base, type BaseProps } from '.';
+import { Base } from '.';
 
 export default {
   title: 'Components/Base',
   component: Base
-} as Meta<BaseProps>;
+} as Meta<typeof Base>;
 
-const Template: StoryFn<BaseProps> = args => {
+const Template: StoryFn<typeof Base> = args => {
   return <Base {...args}></Base>;
 };
 

@@ -1,9 +1,6 @@
 import { type IconBaseProps } from 'react-icons';
 import { RiCheckboxCircleFill, RiErrorWarningFill } from 'react-icons/ri';
-
-export interface IconProps {
-  isSuccess?: boolean;
-}
+import type { IconProps } from '@/src/@types';
 
 export const Icon = ({ isSuccess, ...rest }: IconProps & IconBaseProps) => {
   return (

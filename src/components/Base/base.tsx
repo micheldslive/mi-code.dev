@@ -6,15 +6,8 @@ import {
   PostContent,
   PostMain
 } from '@/src/components';
+import { type BaseProps } from '@/src/@types';
 import { GradientTitle, Wrapper } from './styles';
-
-export interface BaseProps {
-  children: React.ReactNode;
-  title: string;
-  tagline: string;
-  primaryColor: string;
-  secondaryColor: string;
-}
 
 export const Base = ({
   children,

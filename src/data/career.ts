@@ -1,6 +1,6 @@
-import type { Job } from '@/src/components';
+import { type JobsProps } from '@/src/@types';
 
-export const jobs: Job[] = [
+export const jobs: JobsProps[] = [
   {
     jobTitle: 'Middle Front-end Developer',
     company: 'Compass UOL',
