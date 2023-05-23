@@ -1,4 +1,5 @@
-import { AboutTemplate, type AboutProps } from '@/src/templates';
+import { AboutTemplate } from '@/src/templates';
+import type { AboutProps } from '@/src/@types';
 import { type GetStaticProps } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 

@@ -1,7 +1,8 @@
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { FaInstagram } from 'react-icons/fa';
 import { RiMailLine } from 'react-icons/ri';
-import { Link, type LinkProps } from '..';
+import { Link } from '..';
+import type { LinkProps } from '@/src/@types';
 import { Container } from './styles';
 
 const links: LinkProps[] = [

@@ -1,20 +1,7 @@
 import Lottie, { type LottieRefCurrentProps } from 'lottie-react';
-import { type Dispatch, type SetStateAction, useRef } from 'react';
-import type { Project } from '@/src/data';
-import {
-  Body,
-  Description,
-  Hover,
-  Project as StyledProject,
-  Stats,
-  Title
-} from './styles';
-
-interface FeaturedProjectProps {
-  project: Project;
-  onHover: Dispatch<SetStateAction<string>>;
-  isHovered: boolean;
-}
+import { useRef } from 'react';
+import { Body, Description, Hover, Project, Stats, Title } from './styles';
+import type { FeaturedProjectProps } from '@/src/@types';
 
 export const FeaturedProject = ({
   project,
@@ -29,7 +16,7 @@ export const FeaturedProject = ({
   const iconRef = useRef<LottieRefCurrentProps | null>(null);
 
   return (
-    <StyledProject
+    <Project
       href={url}
       target='_blank'
       onHoverStart={() => onHover(title)}
@@ -56,29 +43,20 @@ export const FeaturedProject = ({
         {stats && <Stats>{stats}</Stats>}
       </Body>
       {isHovered && (
-        <>
-          {/* <Hover
-            layoutId='projects'
-            initial={{ translate: 0 }}
-            animate={{ opacity: 1, translate: 1 }}
-            exit={{ opacity: 0 }}
-          /> */}
-
-          <Hover
-            layoutId='projects'
-            initial={{ y: 0, opacity: 1 }}
-            animate={{
-              y: 5,
-              transition: {
-                type: 'tween',
-                repeat: 1,
-                repeatType: 'reverse'
-              }
-            }}
-            exit={{ y: 0, opacity: 0 }}
-          />
-        </>
+        <Hover
+          layoutId='projects'
+          initial={{ y: 0, opacity: 1 }}
+          animate={{
+            y: 5,
+            transition: {
+              type: 'tween',
+              repeat: 1,
+              repeatType: 'reverse'
+            }
+          }}
+          exit={{ y: 0, opacity: 0 }}
+        />
       )}
-    </StyledProject>
+    </Project>
   );
 };

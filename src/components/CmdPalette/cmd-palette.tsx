@@ -4,10 +4,7 @@ import { GeneralButton } from '@/src/components';
 import { useTranslation } from 'next-i18next';
 import parse from 'html-react-parser';
 import { getDeviceType } from '@/src/utils/getDeviceType';
-
-export interface OpenCommandPalleteProps {
-  type?: ReturnType<typeof getDeviceType>;
-}
+import { type OpenCommandPalleteProps } from '@/src/@types';
 
 export const OpenCommandPalette = ({ type }: OpenCommandPalleteProps) => {
   const { query } = useKBar();

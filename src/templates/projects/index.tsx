@@ -4,7 +4,7 @@ import { projects } from '@/src/data/projects';
 import { useTranslation } from 'next-i18next';
 import { getTotalProjects, stripHtml } from '@/src/utils';
 import { featured } from '@/src/data';
-import { type DefaultProps } from '@/src/@types/types';
+import { type DefaultProps } from '@/src/@types';
 
 export type ProjectsProps = DefaultProps;
 

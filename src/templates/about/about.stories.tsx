@@ -1,5 +1,6 @@
 import type { Meta, StoryFn } from '@storybook/react';
-import { AboutTemplate, type AboutProps } from '.';
+import { AboutTemplate } from '.';
+import type { AboutProps } from '@/src/@types';
 
 export default {
   title: 'Pages/About',

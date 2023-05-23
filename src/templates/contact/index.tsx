@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { Base, Mailto } from '@/src/components';
 import { useTranslation } from 'next-i18next';
 import { stripHtml } from '@/src/utils';
-import { type DefaultProps } from '@/src/@types/types';
+import { type DefaultProps } from '@/src/@types';
 
 export type ContactProps = DefaultProps;
 

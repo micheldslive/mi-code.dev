@@ -1,6 +1,6 @@
 import * as ToastPrimitive from '@radix-ui/react-toast';
-import { type ReactNode } from 'react';
-import { Icon, type IconProps } from './icon';
+import type { ToastProps } from '@/src/@types';
+import { Icon } from './icon';
 import {
   Close,
   Description,
@@ -9,14 +9,6 @@ import {
   Title,
   Viewport
 } from './styles';
-
-export interface ToastProps extends IconProps {
-  title: string;
-  description: string;
-  showToast: boolean;
-  setShowToast: (showToast: boolean) => void;
-  children?: ReactNode;
-}
 
 export const Toast = ({
   title,
