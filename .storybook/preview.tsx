@@ -3,11 +3,11 @@ import { StoryContext, StoryFn, type Preview } from '@storybook/react';
 import { I18nextProvider } from 'react-i18next';
 import { CommandBarProvider, ThemeProvider } from '../src/providers';
 import i18n from '../i18n';
-import { useTheme } from '../src/stores';
+import { useMicodeStore } from '../src/stores';
 
 const withThemeProvider = (Story: StoryFn, context: StoryContext) => {
   const { theme } = context.globals;
-  const { setDark } = useTheme();
+  const { setDark } = useMicodeStore();
 
   useEffect(() => {
     setDark(() => theme === 'light');

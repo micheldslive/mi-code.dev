@@ -1,11 +1,11 @@
-import { type Projects } from '@/src/data/projects';
+import { type Projects } from '@/src/data';
 
-export const getTotalProjects = (projects: Projects) => {
+export const getTotalProjects = (all: Projects) => {
   let total = 0;
 
-  for (let i = 0; i < projects.length; i++) {
-    total = total + projects[i].projects.length;
-  }
+  all.map(year => {
+    total += year.projects.length;
+  });
 
   return total;
 };

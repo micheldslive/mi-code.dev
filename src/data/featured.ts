@@ -4,4 +4,4 @@ export const featured = [
   'Books',
   'Movies',
   'mi-calendar'
-];
+] as const;

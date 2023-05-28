@@ -236,8 +236,7 @@ const globalStyles = globalCss({
       fontWeight: 'normal',
       fontStyle: 'italic'
     }
-  ],
-  '@import': './src/styles/keyframes.css'
+  ]
 });
 
 globalStyles();

@@ -59,23 +59,33 @@
 
       "portfolio": {
         "title": "Personal Portfolio",
-        "description": "Meu portifolio Pessoal"
+        "description": "Meu portifolio Pessoal",
+        "url": "https://github.com/micheldslive/micode.dev",
+        "icon": "assignment"
       },
       "books": {
         "title": "Books",
-        "description": "Projeto realizado para criar um ambiente de autenticação."
+        "description": "Projeto realizado para criar um ambiente de autenticação.",
+        "url": "https://books-challenge-micode.vercel.app/",
+        "icon": "book"
       },
       "weather": {
         "title": "Weather",
-        "description": "Projeto realizado para ler as informações do clima ao escolher uma cidade especifica."
+        "description": "Projeto realizado para ler as informações do clima ao escolher uma cidade especifica.",
+        "url": "https://weather-tds.netlify.app/",
+        "icon": "weather"
       },
       "movies": {
         "title": "Movies",
-        "description": "Projeto realizado para consumir dados da api do TMDB e criar uma loja com lista de produtos."
+        "description": "Projeto realizado para consumir dados da api do TMDB e criar uma loja com lista de produtos.",
+        "url": "https://movies-challenge-dot.vercel.app/",
+        "icon": "movie"
       },
       "calendar": {
         "title": "mi-calendar",
-        "description": "Projeto de estudo de caso do nextjs + react-scheduler."
+        "description": "Projeto de estudo de caso do nextjs + react-scheduler.",
+        "url": "https://mi-calendar.vercel.app/",
+        "icon": "calendar"
       }
     },
     "contact": {

@@ -59,23 +59,33 @@
 
       "portfolio": {
         "title": "Personal Portfolio",
-        "description": "This portfolio. It's open source!"
+        "description": "This portfolio. It's open source!",
+        "url": "https://github.com/micheldslive/micode.dev",
+        "icon": "assignment"
       },
       "books": {
         "title": "Books",
-        "description": "Project carried out to create an authentication environment."
+        "description": "Project carried out to create an authentication environment.",
+        "url": "https://books-challenge-micode.vercel.app/",
+        "icon": "book"
       },
       "weather": {
         "title": "Weather",
-        "description": "Project carried out to read weather information when choosing a specific city."
+        "description": "Project carried out to read weather information when choosing a specific city.",
+        "url": "https://weather-tds.netlify.app/",
+        "icon": "weather"
       },
       "movies": {
         "title": "Movies",
-        "description": "Project carried out to consume data from the TMDB api and create a store with a list of products."
+        "description": "Project carried out to consume data from the TMDB api and create a store with a list of products.",
+        "url": "https://movies-challenge-dot.vercel.app/",
+        "icon": "movie"
       },
       "calendar": {
         "title": "mi-calendar",
-        "description": "Nextjs case study project + react-scheduler."
+        "description": "Nextjs case study project + react-scheduler.",
+        "url": "https://mi-calendar.vercel.app/",
+        "icon": "calendar"
       }
     },
     "contact": {

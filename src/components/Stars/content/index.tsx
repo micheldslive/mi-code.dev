@@ -3,10 +3,10 @@ import { useFrame } from '@react-three/fiber';
 import { Points, PointMaterial } from '@react-three/drei';
 import { inSphere } from 'maath/random';
 import { type Points as TPoints } from 'three';
-import { useTheme } from '@/src/stores';
+import { useMicodeStore } from '@/src/stores';
 
 export const StarsContent = () => {
-  const { dark } = useTheme();
+  const { dark } = useMicodeStore();
   const ref = useRef<TPoints>(null);
   const [sphere] = useState(() =>
     inSphere(new Float32Array(5000), {
