@@ -26,11 +26,6 @@ export interface JobsProps {
   location: string;
 }
 
-export type Projects = {
-  year: string;
-  projects: Project[];
-}[];
-
 interface Project {
   title: string;
   url: string;
@@ -42,9 +37,7 @@ interface Project {
   margin?: string;
 }
 
-export interface FeaturedProjectsProps {
-  featured: string[];
-}
+export type Projects = Project;
 
 export interface FeaturedProjectProps {
   project: Project;

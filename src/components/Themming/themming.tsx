@@ -1,10 +1,10 @@
 import { useCallback } from 'react';
-import { useTheme } from '@/src/stores';
+import { useMicodeStore } from '@/src/stores';
 import { Moon, Sun } from './icons';
 import { ThemeButton } from './styles';
 
 export const Themming = () => {
-  const { dark, setDark } = useTheme();
+  const { dark, setDark } = useMicodeStore();
 
   const handleDark = useCallback(() => {
     setDark(dark => !dark);

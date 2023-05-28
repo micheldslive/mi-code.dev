@@ -8,10 +8,10 @@ export default {
   component: FeaturedProjects
 } as Meta<typeof FeaturedProjects>;
 
-const Template: StoryFn<typeof FeaturedProjects> = args => {
+const Template: StoryFn<typeof FeaturedProjects> = () => {
   return (
     <StoryBookContainer>
-      <FeaturedProjects {...args} />
+      <FeaturedProjects />
     </StoryBookContainer>
   );
 };

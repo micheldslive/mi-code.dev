@@ -1,5 +1,4 @@
 import { useKBar } from 'kbar';
-import { useEffect, useState } from 'react';
 import { GeneralButton } from '@/src/components';
 import { useTranslation } from 'next-i18next';
 import parse from 'html-react-parser';
@@ -8,7 +7,6 @@ import { type OpenCommandPalleteProps } from '@/src/@types';
 
 export const OpenCommandPalette = ({ type }: OpenCommandPalleteProps) => {
   const { query } = useKBar();
-  const [mounted, setMounted] = useState(false);
   const { t } = useTranslation();
   const translation = {
     mobile: t('common.kbar.start.mobile'),
@@ -26,13 +24,7 @@ export const OpenCommandPalette = ({ type }: OpenCommandPalleteProps) => {
     )
   };
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
-
-  const device = type || getDeviceType();
+  const deviceType = type || getDeviceType();
 
   return (
     <GeneralButton
@@ -40,7 +32,7 @@ export const OpenCommandPalette = ({ type }: OpenCommandPalleteProps) => {
       onClick={query.toggle}
       aria-label='cmd-palette'
     >
-      {translation[device]}
+      {translation[deviceType]}
     </GeneralButton>
   );
 };
