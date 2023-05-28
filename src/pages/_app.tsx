@@ -4,6 +4,7 @@ import { appWithTranslation } from 'next-i18next';
 import { useEffect, useState } from 'react';
 import { useMicodeStore } from '@/src/stores';
 import { useChangeLanguage } from '@/src/utils';
+import { AnimatePageTransition } from '@/src/templates';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [mounted, setMounted] = useState(false);
@@ -20,7 +21,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <CommandBarProvider>
       <ThemeProvider>
-        <Component {...pageProps} />
+        <AnimatePageTransition>
+          <Component {...pageProps} />
+        </AnimatePageTransition>
       </ThemeProvider>
     </CommandBarProvider>
   );
