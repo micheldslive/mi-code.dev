@@ -21,7 +21,8 @@ export const Header = styled('header', {
   top: '0',
   zIndex: 3,
   marginTop: '0.75rem',
-  '@bp2': { marginTop: '0' }
+  '@bp2': { marginTop: '0' },
+  '@bp0': { flexDirection: 'column', alignItems: 'center' }
 });
 
 export const List = styled('ul', {
@@ -61,15 +62,15 @@ export const Nav = styled('nav', {
   flex: 1,
   order: 2,
   flexBasis: '100%',
-  '@bp2': { order: 0, flexBasis: 'initial' },
-  '@bp4': { overflowX: 'scroll', overflowY: 'hidden' }
+  '@bp2': { order: 0, flexBasis: 'initial' }
 });
 
 export const Aside = styled('div', {
   display: 'flex',
   alignItems: 'center',
   paddingRight: '0.75rem',
-  marginLeft: 'auto'
+  marginLeft: 'auto',
+  '@bp0': { paddingRight: '0', marginLeft: 'unset' }
 });
 
 export const Anchor = styled(Link, {

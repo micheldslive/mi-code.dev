@@ -27,6 +27,10 @@ export const PostContent = styled('div', {
   zIndex: 1,
   height: '100%',
   padding: '1.25rem 0',
+  '@bp0': {
+    padding: '4rem 0'
+  },
+
   '& .iframe-wrap': {
     height: '0',
     marginBottom: '1.25rem',

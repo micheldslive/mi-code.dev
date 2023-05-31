@@ -31,5 +31,7 @@ export const LogoButton = styled(Link, {
     maxWidth: '10rem',
     maxHeight: '2rem',
     fill: '$primary'
-  }
+  },
+
+  '@bp0': { marginLeft: '0' }
 });

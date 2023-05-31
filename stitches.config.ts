@@ -52,6 +52,7 @@ export const {
     }
   },
   media: {
+    bp0: '(max-width: 425px)',
     bp1: '(min-width: 425px)',
     bp2: '(min-width: 860px)',
     bp3: '(max-width: 860px)',
