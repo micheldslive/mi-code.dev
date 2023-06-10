@@ -1,13 +1,16 @@
 import { styled } from '@/stitches.config';
 
 export const GradientTitle = styled('h1', {
-  backgroundSize: '100%',
-  backgroundClip: 'text',
-  WebkitBackgroundClip: 'text',
-  MozBackgroundClip: 'text',
-  WebkitTextFillColor: 'transparent',
-  MozTextFillColor: 'transparent',
-  WebkitBoxDecorationBreak: 'clone'
+  fontSize: '2.5em',
+  'span': {
+    backgroundSize: '100%',
+    backgroundClip: 'text',
+    WebkitBackgroundClip: 'text',
+    MozBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    MozTextFillColor: 'transparent',
+    WebkitBoxDecorationBreak: 'clone'
+  }
 });
 
 export const Wrapper = styled('div', {

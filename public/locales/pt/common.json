@@ -47,11 +47,11 @@
       "title": "Sobre | Michel Domingos",
       "bio": "Bio",
       "description": "Iniciei no DevWorld com PHP em 2015, e desde então sigo nessa estrada como Desenvolvedor. No início de 2021, comecei a trabalhar com Javascript, então surgiu a paixão por essa linguagem e seus Frameworks. Meu foco é Desenvolvimento Front-end, mas também possuo uma ótima facilidade com Desenvolvimento Back-end.",
-      "tagline": "Codifique. Durma. Repita.",
+      "tagline": "<span>De Recife até onde houver queijo!</span> 🧀",
       "career": "Carreira"
     },
     "projects": {
-      "tagline": "Aplicativos, desafios entre outros",
+      "tagline": "<span>Aplicativos, desafios entre outros</span>",
       "title": "Projetos | Michel Domingos",
       "description": "Projetos paralelos são uma forma de converter seus <strong>pensamentos e personalidade</strong> em código. Aqui você pode ver os <strong>{{totalProjects}} diferentes</strong> projetos em que tenho trabalhado.",
       "featured": "Projetos em Destaque",
@@ -90,7 +90,7 @@
     },
     "contact": {
       "title": "Contato | Michel Domingos",
-      "tagline": "Manda um email. Como nos velhos tempos.",
+      "tagline": "<span>Manda um email. Como nos velhos tempos.</span>",
       "description": "<strong>Amo conversar</strong> com outros desenvolvedores, estudantes e iniciantes no ramo. <strong>Sou um cara bastante ocupado</strong>, então não posso prometer que vou responder seu e-mail na hora, mas vou dar o meu melhor para responder o mais rápido possível.",
       "email": "Mande um email",
 
