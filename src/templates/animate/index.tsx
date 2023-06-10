@@ -14,7 +14,7 @@ export const AnimatePageTransition = ({ children }: PropsWithChildren) => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 1 }}
       >
-        <NextNProgress color={theme.colors.blue.name} />
+        <NextNProgress color={theme.colors.blue.value} />
         {children}
       </motion.div>
     </AnimatePresence>

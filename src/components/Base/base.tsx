@@ -8,6 +8,7 @@ import {
 } from '@/src/components';
 import { type BaseProps } from '@/src/@types';
 import { GradientTitle, Wrapper } from './styles';
+import parse from 'html-react-parser';
 
 export const Base = ({
   children,
@@ -32,14 +33,16 @@ export const Base = ({
           <PostContainer>
             <GradientTitle
               css={{
-                backgroundImage: `linear-gradient(
-                135deg,
-                $${primaryColor} 0%,
-                $${secondaryColor} 100%
-              );`
+                'span': {
+                  backgroundImage: `linear-gradient(
+                    135deg,
+                    $${primaryColor} 0%,
+                    $${secondaryColor} 100%
+                  );`
+                }
               }}
             >
-              {tagline ? tagline : title}
+              {parse(tagline ? tagline : title)}
             </GradientTitle>
             {children}
           </PostContainer>
