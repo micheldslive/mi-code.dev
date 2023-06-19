@@ -14,23 +14,32 @@ export default async function SendMail(
     origin: '*',
     optionsSuccessStatus: 200
   });
-  try {
-    const { success } = emailSchema.safeParse(req.body);
-    if (!success) return;
 
-    const data = req.body;
+  if (req.method === 'POST') {
+    try {
+      const { success } = emailSchema.safeParse(req.body);
+      if (!success) return;
 
-    await resend.emails.send({
-      from: data.name,
-      to: String(process.env.RESEND_EMAIL_USER),
-      subject: `${data.name} - via micode-dev`,
-      html: `<p><strong>Name:</strong> ${data.name}</p>
-        <p><strong>Email:</strong> ${data.email}</p>
-        <p>${data.message}</p>`
-    });
+      const data = req.body;
 
-    return res.status(200).json({ message: 'Email sent' });
-  } catch (error) {
-    res.status(500).json({ error });
+      res.setHeader('Access-Control-Allow-Origin', '*');
+      res.setHeader('Access-Control-Allow-Headers', '*');
+      res.setHeader('Access-Control-Allow-Methods', '*');
+
+      await resend.emails.send({
+        from: data.name,
+        to: String(process.env.RESEND_EMAIL_USER),
+        subject: `${data.name} - via micode-dev`,
+        html: `<p><strong>Name:</strong> ${data.name}</p>
+          <p><strong>Email:</strong> ${data.email}</p>
+          <p>${data.message}</p>`
+      });
+
+      return res.status(200).json({ message: 'Email sent' });
+    } catch (error) {
+      return res.status(500).json({ error });
+    }
   }
+
+  return res.status(405).json({ message: 'Method not allowed' });
 }
