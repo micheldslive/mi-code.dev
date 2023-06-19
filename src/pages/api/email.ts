@@ -10,7 +10,7 @@ export default async function SendMail(
   res: NextApiResponse
 ) {
   await NextCors(req, res, {
-    methods: ['GET', 'POST', 'DELETE', 'PUT', 'PATCH'],
+    methods: ['GET', 'HEAD', 'POST', 'DELETE', 'PUT', 'PATCH'],
     origin: '*',
     optionsSuccessStatus: 200
   });
