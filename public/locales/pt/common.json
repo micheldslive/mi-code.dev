@@ -108,10 +108,13 @@
       "labels": {
         "name": "nome",
         "email": "email",
-        "message": "mensagem"
+        "message": "mensagem",
+        "button": "Enviar"
       },
       "placeholders": {
-        "message": "Sua mensagem aqui :P"
+        "name": "Seu nome",
+        "email": "email@exemplo.com",
+        "message": "Sua mensagem aqui :D"
       },
 
       "send": "Enviar"
