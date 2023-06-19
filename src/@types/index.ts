@@ -1,6 +1,14 @@
 import type { getDeviceType } from '@/src/utils/getDeviceType';
-import type { Dispatch, ReactNode, SetStateAction } from 'react';
+import type {
+  ButtonHTMLAttributes,
+  Dispatch,
+  ReactNode,
+  SetStateAction
+} from 'react';
 import type LinkProps from 'next/link';
+import { type emailSchema } from '../schemas';
+import type * as z from 'zod';
+import { type PropsWithChildren } from 'react';
 
 export interface DefaultProps {
   primaryColor: string;
@@ -74,3 +82,8 @@ export interface ToastProps extends IconProps {
 export interface OpenCommandPalleteProps {
   type?: ReturnType<typeof getDeviceType>;
 }
+
+export type EmailProps = z.infer<typeof emailSchema>;
+
+export type SendButtonProps = ButtonHTMLAttributes<HTMLButtonElement> &
+  PropsWithChildren;

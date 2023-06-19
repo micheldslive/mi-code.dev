@@ -108,9 +108,12 @@
       "labels": {
         "name": "name",
         "email": "email",
-        "message": "message"
+        "message": "message",
+        "button": "Send"
       },
       "placeholders": {
+        "name": "Your Name",
+        "email": "email@example.com",
         "message": "Your message here :D"
       },
       "send": "Send"
