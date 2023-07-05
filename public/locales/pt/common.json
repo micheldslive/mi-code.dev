@@ -93,6 +93,7 @@
       "tagline": "<span>Manda um email. Como nos velhos tempos.</span>",
       "description": "<strong>Amo conversar</strong> com outros desenvolvedores, estudantes e iniciantes no ramo. <strong>Sou um cara bastante ocupado</strong>, então não posso prometer que vou responder seu e-mail na hora, mas vou dar o meu melhor para responder o mais rápido possível.",
       "email": "Mande um email",
+      "href": "mailto:micheldslive@gmail.com",
 
       "toast": {
         "success": {

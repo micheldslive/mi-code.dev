@@ -93,6 +93,7 @@
       "tagline": "<span>Email me. As in the good old days.</span>",
       "description": "<strong>I love talking</strong> with other developers, students, and newbies. <strong>I'm a pretty busy guy</strong> so I can't promise that I'll answer your email on time, but I'll do my best to get back to you ASAP.",
       "email": "Send an email",
+      "href": "mailto:micheldslive@gmail.com",
 
       "toast": {
         "success": {
