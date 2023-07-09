@@ -60,31 +60,54 @@
       "portfolio": {
         "title": "Personal Portfolio",
         "description": "This portfolio. It's open source!",
-        "url": "https://github.com/micheldslive/micode.dev",
+        "links": {
+          "github": "https://github.com/micheldslive/micode.dev"
+        },
         "icon": "assignment"
+      },
+      "opea": {
+        "title": "Opea",
+        "description": "Project carried out to create a CRUD using provided API.",
+        "links": {
+          "github": "https://github.com/micheldslive/opea-challenge",
+          "web": "https://opea-challenge-micode.vercel.app/"
+        },
+        "icon": "opea"
       },
       "books": {
         "title": "Books",
         "description": "Project carried out to create an authentication environment.",
-        "url": "https://books-challenge-micode.vercel.app/",
+        "links": {
+          "github": "https://github.com/micheldslive/books-challenge",
+          "web": "https://books-challenge-micode.vercel.app/"
+        },
         "icon": "book"
       },
       "weather": {
         "title": "Weather",
         "description": "Project carried out to read weather information when choosing a specific city.",
-        "url": "https://weather-tds.netlify.app/",
+        "links": {
+          "github": "https://github.com/micheldslive/weather-challenge",
+          "web": "https://weather-tds.netlify.app/"
+        },
         "icon": "weather"
       },
       "movies": {
         "title": "Movies",
         "description": "Project carried out to consume data from the TMDB api and create a store with a list of products.",
-        "url": "https://movies-challenge-dot.vercel.app/",
+        "links": {
+          "github": "https://github.com/micheldslive/movies-challenge",
+          "web": "https://movies-challenge-dot.vercel.app/"
+        },
         "icon": "movie"
       },
       "calendar": {
         "title": "mi-calendar",
         "description": "Nextjs case study project + react-scheduler.",
-        "url": "https://mi-calendar.vercel.app/",
+        "links": {
+          "github": "https://github.com/micheldslive/mi-calendar",
+          "web": "https://mi-calendar.vercel.app/"
+        },
         "icon": "calendar"
       }
     },
