@@ -56,3 +56,30 @@ export const Stats = styled('p', {
   letterSpacing: '1.2px',
   fontSize: '12px'
 });
+
+export const LinkContent = styled('div', {
+  display: 'flex',
+  alignItems: 'center',
+  gap: '8px',
+  minHeight: '35px',
+  marginTop: '10px'
+});
+
+export const Link = styled('a', {
+  textDecoration: 'none',
+  opacity: '0',
+  pointerEvents: 'none',
+  visibility: 'hidden',
+  border: 'none',
+  transition: 'all 0.3s ease-out',
+
+  variants: {
+    show: {
+      true: {
+        opacity: '1',
+        pointerEvents: 'auto',
+        visibility: 'visible'
+      }
+    }
+  }
+});

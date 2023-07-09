@@ -1,5 +1,5 @@
 import { KBarPortal, KBarProvider } from 'kbar';
-import Lottie, {
+import {
   type LottieComponentProps,
   type LottieRefCurrentProps
 } from 'lottie-react';
@@ -12,15 +12,9 @@ import {
   useCallback
 } from 'react';
 import { RiGithubLine, RiInstagramLine, RiLinkedinLine } from 'react-icons/ri';
-import { RenderResults, Toast } from '@/src/components';
+import { LottieRender, RenderResults, Toast } from '@/src/components';
 import { Animator, Positioner, Search } from './styles';
 
-import aboutIcon from '@/public/static/icons/about.json';
-import copyLinkIcon from '@/public/static/icons/copy-link.json';
-import emailIcon from '@/public/static/icons/email.json';
-import homeIcon from '@/public/static/icons/home.json';
-import projectsIcon from '@/public/static/icons/projects.json';
-import sourceIcon from '@/public/static/icons/source.json';
 import { useTranslation } from 'next-i18next';
 
 type ActionType = {
@@ -62,13 +56,7 @@ export function CommandBarProvider({ children }: PropsWithChildren) {
       section: t('common.kbar.sections.goto'),
       perform: () => void router.push('/'),
       icon: (
-        <Lottie
-          lottieRef={homeRef}
-          style={iconStyle}
-          animationData={homeIcon}
-          loop={false}
-          autoplay={false}
-        />
+        <LottieRender lottieRef={homeRef} style={iconStyle} iconName='home' />
       )
     },
     {
@@ -79,13 +67,7 @@ export function CommandBarProvider({ children }: PropsWithChildren) {
       section: t('common.kbar.sections.goto'),
       perform: () => void router.push('/about'),
       icon: (
-        <Lottie
-          lottieRef={aboutRef}
-          style={iconStyle}
-          animationData={aboutIcon}
-          loop={false}
-          autoplay={false}
-        />
+        <LottieRender lottieRef={aboutRef} style={iconStyle} iconName='about' />
       )
     },
     {
@@ -96,12 +78,10 @@ export function CommandBarProvider({ children }: PropsWithChildren) {
       section: t('common.kbar.sections.goto'),
       perform: () => void router.push('/projects'),
       icon: (
-        <Lottie
+        <LottieRender
           lottieRef={projectsRef}
           style={iconStyle}
-          animationData={projectsIcon}
-          loop={false}
-          autoplay={false}
+          iconName='projects'
         />
       )
     },
@@ -113,12 +93,10 @@ export function CommandBarProvider({ children }: PropsWithChildren) {
       section: t('common.kbar.sections.general'),
       perform: copyUrl,
       icon: (
-        <Lottie
+        <LottieRender
           lottieRef={copyLinkRef}
           style={iconStyle}
-          animationData={copyLinkIcon}
-          loop={false}
-          autoplay={false}
+          iconName='copy-link'
         />
       )
     },
@@ -130,13 +108,7 @@ export function CommandBarProvider({ children }: PropsWithChildren) {
       section: t('common.kbar.sections.general'),
       perform: () => void router.push('/contact'),
       icon: (
-        <Lottie
-          lottieRef={emailRef}
-          style={iconStyle}
-          animationData={emailIcon}
-          loop={false}
-          autoplay={false}
-        />
+        <LottieRender lottieRef={emailRef} style={iconStyle} iconName='email' />
       )
     },
     {
@@ -148,12 +120,10 @@ export function CommandBarProvider({ children }: PropsWithChildren) {
       perform: () =>
         window.open('https://github.com/micheldslive/micode.dev', '_blank'),
       icon: (
-        <Lottie
+        <LottieRender
           lottieRef={sourceRef}
           style={iconStyle}
-          animationData={sourceIcon}
-          loop={false}
-          autoplay={false}
+          iconName='source'
         />
       )
     },

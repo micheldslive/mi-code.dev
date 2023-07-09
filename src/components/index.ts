@@ -15,3 +15,4 @@ export * from './Themming';
 export * from './Logo';
 export * from './Language';
 export * from './SendButton';
+export * from './LottieRender';
