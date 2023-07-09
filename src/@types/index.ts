@@ -41,7 +41,6 @@ export interface Project extends IconNameProps {
     web?: string;
   };
   description?: string;
-  stats?: string;
   width?: number;
   height?: number;
   margin?: string;

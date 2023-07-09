@@ -47,16 +47,6 @@ export const Description = styled('p', {
   lineHeight: '24px'
 });
 
-export const Stats = styled('p', {
-  margin: '5px 0 0',
-  color: '$primary',
-  textTransform: 'uppercase',
-  display: 'inline-block',
-  fontWeight: 500,
-  letterSpacing: '1.2px',
-  fontSize: '12px'
-});
-
 export const LinkContent = styled('div', {
   display: 'flex',
   alignItems: 'center',

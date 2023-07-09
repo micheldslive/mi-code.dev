@@ -7,7 +7,6 @@ import {
   Link,
   LinkContent,
   Project,
-  Stats,
   Title
 } from './styles';
 import type { FeaturedProjectProps } from '@/src/@types';
@@ -18,7 +17,7 @@ export const FeaturedProject = ({
   onHover,
   isHovered
 }: FeaturedProjectProps) => {
-  const { title, links, description, iconName, stats, width, height, margin } =
+  const { title, links, description, iconName, width, height, margin } =
     project;
 
   const iconRef = useRef<LottieRefCurrentProps | null>(null);
@@ -46,7 +45,6 @@ export const FeaturedProject = ({
       <Body>
         <Title>{title}</Title>
         <Description>{description}</Description>
-        {stats && <Stats>{stats}</Stats>}
         <LinkContent>
           {links.git && (
             <Link
