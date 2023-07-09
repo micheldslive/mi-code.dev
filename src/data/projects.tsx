@@ -1,21 +1,5 @@
 import { useTranslation } from 'next-i18next';
 
-export type Projects = {
-  year: string;
-  projects: Project[];
-}[];
-
-export interface Project {
-  title: string;
-  url: string;
-  description?: string;
-  icon?: string;
-  stats?: string;
-  width?: number;
-  height?: number;
-  margin?: string;
-}
-
 export const useProjects = () => {
   const { t } = useTranslation();
 
@@ -26,8 +10,17 @@ export const useProjects = () => {
         {
           title: t('pages.projects.portfolio.title'),
           description: t('pages.projects.portfolio.description'),
-          url: t('pages.projects.portfolio.url'),
+          links: { git: t('pages.projects.portfolio.links.github') },
           iconName: t('pages.projects.portfolio.icon')
+        },
+        {
+          title: t('pages.projects.opea.title'),
+          description: t('pages.projects.opea.description'),
+          links: {
+            git: t('pages.projects.opea.links.github'),
+            web: t('pages.projects.opea.links.web')
+          },
+          iconName: t('pages.projects.opea.icon')
         }
       ]
     },
@@ -37,25 +30,37 @@ export const useProjects = () => {
         {
           title: t('pages.projects.books.title'),
           description: t('pages.projects.books.description'),
-          url: t('pages.projects.books.url'),
+          links: {
+            git: t('pages.projects.books.links.github'),
+            web: t('pages.projects.books.links.web')
+          },
           iconName: t('pages.projects.books.icon')
         },
         {
           title: t('pages.projects.weather.title'),
           description: t('pages.projects.weather.description'),
-          url: t('pages.projects.weather.url'),
+          links: {
+            git: t('pages.projects.weather.links.github'),
+            web: t('pages.projects.weather.links.web')
+          },
           iconName: t('pages.projects.weather.icon')
         },
         {
           title: t('pages.projects.movies.title'),
           description: t('pages.projects.movies.description'),
-          url: t('pages.projects.movies.url'),
+          links: {
+            git: t('pages.projects.movies.links.github'),
+            web: t('pages.projects.movies.links.web')
+          },
           iconName: t('pages.projects.movies.icon')
         },
         {
           title: t('pages.projects.calendar.title'),
           description: t('pages.projects.calendar.description'),
-          url: t('pages.projects.calendar.url'),
+          links: {
+            git: t('pages.projects.calendar.links.github'),
+            web: t('pages.projects.calendar.links.web')
+          },
           iconName: t('pages.projects.calendar.icon'),
           width: 41,
           height: 41,

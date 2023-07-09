@@ -34,15 +34,21 @@ export interface JobsProps {
   location: string;
 }
 
-interface Project {
+export interface Project extends IconNameProps {
   title: string;
-  url: string;
+  links: {
+    git?: string;
+    web?: string;
+  };
   description?: string;
-  iconName?: string;
   stats?: string;
   width?: number;
   height?: number;
   margin?: string;
+}
+
+export interface IconNameProps {
+  iconName?: string;
 }
 
 export type Projects = Project;

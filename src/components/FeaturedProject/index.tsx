@@ -1,24 +1,32 @@
-import Lottie, { type LottieRefCurrentProps } from 'lottie-react';
+import { type LottieRefCurrentProps } from 'lottie-react';
 import { useRef } from 'react';
-import { Body, Description, Hover, Project, Stats, Title } from './styles';
+import {
+  Body,
+  Description,
+  Hover,
+  Link,
+  LinkContent,
+  Project,
+  Stats,
+  Title
+} from './styles';
 import type { FeaturedProjectProps } from '@/src/@types';
+import { LottieRender } from '../LottieRender';
 
 export const FeaturedProject = ({
   project,
   onHover,
   isHovered
 }: FeaturedProjectProps) => {
-  const { title, url, description, iconName, stats, width, height, margin } =
+  const { title, links, description, iconName, stats, width, height, margin } =
     project;
 
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const icon = require(`../../../public/static/icons/${iconName}.json`);
   const iconRef = useRef<LottieRefCurrentProps | null>(null);
+  const githubIconRef = useRef<LottieRefCurrentProps | null>(null);
+  const webIconRef = useRef<LottieRefCurrentProps | null>(null);
 
   return (
     <Project
-      href={url}
-      target='_blank'
       onHoverStart={() => onHover(title)}
       onHoverEnd={() => onHover('')}
       data-testid='featuredProject'
@@ -26,21 +34,43 @@ export const FeaturedProject = ({
       onMouseLeave={() => iconRef.current?.stop()}
       aria-label='featuredProject'
     >
-      <Lottie
+      <LottieRender
         lottieRef={iconRef}
         style={{
           width: width || 24,
           height: height || 24,
           margin: margin || '0 0 10px 0'
         }}
-        animationData={icon}
-        loop={false}
-        autoplay={false}
+        iconName={iconName}
       />
       <Body>
         <Title>{title}</Title>
         <Description>{description}</Description>
         {stats && <Stats>{stats}</Stats>}
+        <LinkContent>
+          {links.git && (
+            <Link
+              href={links.git}
+              show={isHovered}
+              target='_blank'
+              onMouseEnter={() => githubIconRef.current?.play()}
+              onMouseLeave={() => githubIconRef.current?.stop()}
+            >
+              <LottieRender lottieRef={githubIconRef} iconName={'source'} />
+            </Link>
+          )}
+          {links.web && (
+            <Link
+              href={links.web}
+              show={isHovered}
+              target='_blank'
+              onMouseEnter={() => webIconRef.current?.play()}
+              onMouseLeave={() => webIconRef.current?.stop()}
+            >
+              <LottieRender lottieRef={webIconRef} iconName={'copy-link'} />
+            </Link>
+          )}
+        </LinkContent>
       </Body>
       {isHovered && (
         <Hover

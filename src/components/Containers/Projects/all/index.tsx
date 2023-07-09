@@ -8,9 +8,9 @@ export const AllProjects = () => {
         <div key={index}>
           <h3>{item.year}</h3>
           <ul>
-            {item.projects.map(({ title, url }, index) => (
+            {item.projects.map(({ title, links }, index) => (
               <li key={index} aria-label='project'>
-                <a href={url} target='_blank' rel='noreferrer'>
+                <a href={links.git} target='_blank' rel='noreferrer'>
                   {title}
                 </a>
               </li>
