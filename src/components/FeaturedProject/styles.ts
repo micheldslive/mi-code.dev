@@ -56,19 +56,22 @@ export const LinkContent = styled('div', {
 });
 
 export const Link = styled('a', {
-  textDecoration: 'none',
-  opacity: '0',
-  pointerEvents: 'none',
-  visibility: 'hidden',
   border: 'none',
   transition: 'all 0.3s ease-out',
+  '@bp6': {
+    opacity: '0',
+    pointerEvents: 'none',
+    visibility: 'hidden'
+  },
 
   variants: {
     show: {
       true: {
-        opacity: '1',
-        pointerEvents: 'auto',
-        visibility: 'visible'
+        '@bp6': {
+          opacity: '1',
+          pointerEvents: 'auto',
+          visibility: 'visible'
+        }
       }
     }
   }
