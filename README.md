@@ -23,8 +23,8 @@ Este é o site do meu portfólio pessoal, apresentando alguns de meus projetos, 
 </p>
 
 ---
-O projeto está disponível para visualização em https://micode-dev.vercel.app. <br>
-A documentação dos componentes está disponível para visualização em https://micode-dev-book.vercel.app.
+O projeto está disponível para visualização em https://mi-code.dev/. <br>
+A documentação dos componentes está disponível para visualização em https://book.mi-code.dev/.
 
 ---
 
