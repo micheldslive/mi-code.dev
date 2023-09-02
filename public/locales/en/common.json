@@ -58,19 +58,28 @@
       "all": "All Projects",
 
       "portfolio": {
-        "title": "Personal Portfolio",
+        "title": "Portfolio",
         "description": "This portfolio. It's open source!",
         "links": {
           "github": "https://github.com/micheldslive/micode.dev"
         },
         "icon": "assignment"
       },
+      "dog-and-pony": {
+        "title": "Dog and Pony",
+        "description": "Project carried out to create a Jobs registration form, saving them in Localstorage.",
+        "links": {
+          "github": "https://github.com/micheldslive/dog-and-pony-challenge",
+          "web": "https://dog-and-pony.mi-code.dev/"
+        },
+        "icon": "dog-and-pony"
+      },
       "opea": {
         "title": "Opea",
         "description": "Project carried out to create a CRUD using provided API.",
         "links": {
           "github": "https://github.com/micheldslive/opea-challenge",
-          "web": "https://opea-challenge-micode.vercel.app/"
+          "web": "https://opea.mi-code.dev/"
         },
         "icon": "opea"
       },
@@ -79,7 +88,7 @@
         "description": "Project carried out to create an authentication environment.",
         "links": {
           "github": "https://github.com/micheldslive/books-challenge",
-          "web": "https://books-challenge-micode.vercel.app/"
+          "web": "https://books.mi-code.dev/"
         },
         "icon": "book"
       },
@@ -88,7 +97,7 @@
         "description": "Project carried out to read weather information when choosing a specific city.",
         "links": {
           "github": "https://github.com/micheldslive/weather-challenge",
-          "web": "https://weather-tds.netlify.app/"
+          "web": "https://weater.mi-code.dev/"
         },
         "icon": "weather"
       },
@@ -97,16 +106,25 @@
         "description": "Project carried out to consume data from the TMDB api and create a store with a list of products.",
         "links": {
           "github": "https://github.com/micheldslive/movies-challenge",
-          "web": "https://movies-challenge-dot.vercel.app/"
+          "web": "https://movies.mi-code.dev/"
         },
-        "icon": "movie"
+        "icon": "movies"
       },
       "calendar": {
         "title": "mi-calendar",
         "description": "Nextjs case study project + react-scheduler.",
         "links": {
           "github": "https://github.com/micheldslive/mi-calendar",
-          "web": "https://mi-calendar.vercel.app/"
+          "web": "https://calendar.mi-code.dev/"
+        },
+        "icon": "calendar"
+      },
+      "pomodoro-app": {
+        "title": "pomodoro-app",
+        "description": "A pomodoro app built using front-end mentor layout",
+        "links": {
+          "github": "https://github.com/micheldslive/pomodoro-app",
+          "web": "https://pomodoro.mi-code.dev/"
         },
         "icon": "calendar"
       }

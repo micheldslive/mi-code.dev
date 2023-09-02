@@ -14,6 +14,18 @@ export const useProjects = () => {
           iconName: t('pages.projects.portfolio.icon')
         },
         {
+          title: t('pages.projects.dog-and-pony.title'),
+          description: t('pages.projects.dog-and-pony.description'),
+          links: {
+            git: t('pages.projects.dog-and-pony.links.github'),
+            web: t('pages.projects.dog-and-pony.links.web')
+          },
+          iconName: t('pages.projects.dog-and-pony.icon'),
+          width: 51,
+          height: 51,
+          margin: '-15px 0 0 -13px'
+        },
+        {
           title: t('pages.projects.opea.title'),
           description: t('pages.projects.opea.description'),
           links: {
@@ -65,6 +77,18 @@ export const useProjects = () => {
           width: 41,
           height: 41,
           margin: '0 0 0 -10px'
+        },
+        {
+          title: t('pages.projects.pomodoro-app.title'),
+          description: t('pages.projects.pomodoro-app.description'),
+          links: {
+            git: t('pages.projects.pomodoro-app.links.github'),
+            web: t('pages.projects.pomodoro-app.links.web')
+          },
+          iconName: t('pages.projects.pomodoro-app.icon'),
+          width: 31,
+          height: 31,
+          margin: '0 0 0 -5px'
         }
       ]
     }
