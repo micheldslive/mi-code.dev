@@ -58,28 +58,37 @@
       "all": "Todos os projetos",
 
       "portfolio": {
-        "title": "Personal Portfolio",
+        "title": "Portfolio",
         "description": "Meu portifolio Pessoal",
         "links": {
           "github": "https://github.com/micheldslive/micode.dev"
         },
         "icon": "assignment"
       },
+      "dog-and-pony": {
+        "title": "Dog and Pony",
+        "description": "Projeto realizado para criar um formulário de cadastro de Jobs, salvando-s no Localstorage.",
+        "links": {
+          "github": "https://github.com/micheldslive/dog-and-pony-challenge",
+          "web": "https://dog-and-pony.mi-code.dev/"
+        },
+        "icon": "dog-and-pony"
+      },
       "opea": {
         "title": "Opea",
-        "description": "Project carried out to create an authentication environment.",
+        "description": "Projeto realizado para criação de um CRUD utilizando API fornecida.",
         "links": {
           "github": "https://github.com/micheldslive/opea-challenge",
-          "web": "https://opea-challenge-micode.vercel.app/"
+          "web": "https://opea.mi-code.dev/"
         },
         "icon": "opea"
       },
       "books": {
         "title": "Books",
-        "description": "Projeto realizado para criar um CRUD utilizando API fornecida.",
+        "description": "Projeto realizado para criação de ambiente de autenticação.",
         "links": {
           "github": "https://github.com/micheldslive/books-challenge",
-          "web": "https://books-challenge-micode.vercel.app/"
+          "web": "https://books.mi-code.dev/"
         },
         "icon": "book"
       },
@@ -88,7 +97,7 @@
         "description": "Projeto realizado para ler as informações do clima ao escolher uma cidade especifica.",
         "links": {
           "github": "https://github.com/micheldslive/weather-challenge",
-          "web": "https://weather-tds.netlify.app/"
+          "web": "https://weater.mi-code.dev/"
         },
         "icon": "weather"
       },
@@ -97,19 +106,29 @@
         "description": "Projeto realizado para consumir dados da api do TMDB e criar uma loja com lista de produtos.",
         "links": {
           "github": "https://github.com/micheldslive/movies-challenge",
-          "web": "https://movies-challenge-dot.vercel.app/"
+          "web": "https://movies.mi-code.dev/"
         },
-        "icon": "movie"
+        "icon": "movies"
       },
       "calendar": {
         "title": "mi-calendar",
         "description": "Projeto de estudo de caso do nextjs + react-scheduler.",
         "links": {
           "github": "https://github.com/micheldslive/mi-calendar",
-          "web": "https://mi-calendar.vercel.app/"
+          "web": "https://calendar.mi-code.dev/"
         },
         "icon": "calendar"
+      },
+      "pomodoro-app": {
+        "title": "pomodoro-app",
+        "description": "Um aplicativo pomodoro criado usando layout de mentor front-end.",
+        "links": {
+          "github": "https://github.com/micheldslive/pomodoro-app",
+          "web": "https://pomodoro.mi-code.dev/"
+        },
+        "icon": "pomodoro"
       }
+      
     },
     "contact": {
       "title": "Contato | Michel Domingos",
