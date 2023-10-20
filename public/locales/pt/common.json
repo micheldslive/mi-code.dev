@@ -65,6 +65,15 @@
         },
         "icon": "assignment"
       },
+      "mui": {
+        "title": "Micode UI",
+        "description": "UI de componentes com tecnologia React, acessível por padrão e construída usando o Radix. A Micode UI é de código aberto e fácil de usar.",
+        "links": {
+          "github": "https://github.com/micheldslive/micode-ui",
+          "web": "https://ui.mi-code.dev/"
+        },
+        "icon": "mui"
+      },
       "dog-and-pony": {
         "title": "Dog and Pony",
         "description": "Projeto realizado para criar um formulário de cadastro de Jobs, salvando-s no Localstorage.",
@@ -128,7 +137,6 @@
         },
         "icon": "pomodoro"
       }
-      
     },
     "contact": {
       "title": "Contato | Michel Domingos",

@@ -65,6 +65,15 @@
         },
         "icon": "assignment"
       },
+      "mui": {
+        "title": "Micode UI",
+        "description": "React Powered Component UI, accessible by default and built on top of Radix. Micode UI is open source and made to be easy to use.",
+        "links": {
+          "github": "https://github.com/micheldslive/micode-ui",
+          "web": "https://ui.mi-code.dev/"
+        },
+        "icon": "mui"
+      },
       "dog-and-pony": {
         "title": "Dog and Pony",
         "description": "Project carried out to create a Jobs registration form, saving them in Localstorage.",
