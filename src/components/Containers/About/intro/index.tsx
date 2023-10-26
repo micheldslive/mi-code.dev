@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import parse from 'html-react-parser';
 import { Container, Section } from './styles';
 import { useTranslation } from 'next-i18next';
 
@@ -6,7 +7,7 @@ export const Intro = () => {
   const { t } = useTranslation();
 
   return (
-    <Container aria-label='intro'>
+    <Container aria-label='intro' alignItems>
       <Section>
         <Image
           alt='Michel Domingos'
@@ -17,9 +18,8 @@ export const Intro = () => {
         />
       </Section>
       <Section>
-        <h2>{t('pages.about.bio')}</h2>
         <blockquote>
-          <p>{t('pages.about.description')}</p>
+          <p>{parse(t('pages.about.description'))}</p>
         </blockquote>
       </Section>
     </Container>
