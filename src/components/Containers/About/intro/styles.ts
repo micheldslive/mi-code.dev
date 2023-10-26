@@ -4,7 +4,15 @@ export const Container = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',
-  '@bp2': { flexDirection: 'row' }
+  '@bp2': { flexDirection: 'row' },
+
+  variants: {
+    alignItems: {
+      true: {
+        alignItems: 'center'
+      }
+    }
+  }
 });
 
 export const Paragraph = styled('p', {

@@ -21,7 +21,7 @@ export const Anchor = styled(Link, {
     opacity: 1,
     width: '1rem',
     height: '1rem',
-    transition: 'opacity $durwation ease-in-out',
+    transition: 'opacity $duration ease-in-out',
     '@bp2': { opacity: 0, fontSize: '1rem' }
   },
   '&:hover svg': {

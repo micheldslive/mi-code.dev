@@ -45,8 +45,7 @@
     },
     "about": {
       "title": "Sobre | Michel Domingos",
-      "bio": "Bio",
-      "description": "Iniciei no DevWorld com PHP em 2015, e desde então sigo nessa estrada como Desenvolvedor. No início de 2021, comecei a trabalhar com Javascript, então surgiu a paixão por essa linguagem e seus Frameworks. Meu foco é Desenvolvimento Front-end, mas também possuo uma ótima facilidade com Desenvolvimento Back-end.",
+      "description": "Desenvolvedor de Software, apaixonado por utilizar a tecnologia como meio de solução de problemas que facilitem a vida das pessoas. Minha meta é continuar aprimorando minhas habilidades, criando softwares de alta qualidade, testáveis, fáceis de usar, visualmente atraentes combinando um design intuitivo com uma ótima funcionalidade para uma melhor experiência do usuário.Sempre busco me manter atualizado com as mais recentes tecnologias da web, possuo forte compreensão dos princípios de desenvolvimento web como SEO, acessibilidade e design responsivo.Sou colaborativo, gosto de ajudar pessoas compartilhando conhecimentos sobre as tecnologias que mais conheço.",
       "tagline": "<span>De Recife até onde houver queijo!</span> 🧀",
       "career": "Carreira"
     },
