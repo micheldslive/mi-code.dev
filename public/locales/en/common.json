@@ -46,7 +46,7 @@
     "about": {
       "title": "About | Michel Domingos",
       "description": "Software Developer, passionate about using technology as a means of solving problems that make life easier for the user. My goal is to keep improving my skills, creating high quality, testable, easy to use, visually appealing software combining intuitive design with great functionality for a better user experience. Always looking to stay up to date with the latest web technologies, I have a strong understanding of web development principles such as SEO, accessibility and responsive design. I'm collaborative, I like to help people by sharing knowledge about the technologies I know best.",
-      
+
       "tagline": "<span>From Recife to as far as there cheese!</span> 🧀",
       "career": "Career"
     },
@@ -59,11 +59,20 @@
 
       "portfolio": {
         "title": "Portfolio",
-        "description": "This portfolio. It's open source!",
+        "description": "My portfolio (Repository of this site)",
         "links": {
           "github": "https://github.com/micheldslive/micode.dev"
         },
         "icon": "assignment"
+      },
+      "jsm": {
+        "title": "JSM",
+        "description": "Project carried out for a Front-End challenge using turborepo.",
+        "links": {
+          "github": "https://github.com/micheldslive/jsm-challenge",
+          "web": "https://jsm.mi-code.dev/"
+        },
+        "icon": "jsm"
       },
       "mui": {
         "title": "Micode UI",

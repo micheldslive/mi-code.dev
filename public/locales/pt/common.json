@@ -57,12 +57,21 @@
       "all": "Todos os projetos",
 
       "portfolio": {
-        "title": "Portfolio",
-        "description": "Meu portifolio Pessoal",
+        "title": "Portfólio",
+        "description": "Meu portfólio (Repositório deste site)",
         "links": {
           "github": "https://github.com/micheldslive/micode.dev"
         },
         "icon": "assignment"
+      },
+      "jsm": {
+        "title": "JSM",
+        "description": "Projeto realizado para um desafio Front-End utilizando turborepo.",
+        "links": {
+          "github": "https://github.com/micheldslive/jsm-challenge",
+          "web": "https://jsm.mi-code.dev/"
+        },
+        "icon": "jsm"
       },
       "mui": {
         "title": "Micode UI",
