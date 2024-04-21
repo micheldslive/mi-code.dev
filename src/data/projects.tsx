@@ -14,6 +14,17 @@ export const useProjects = () => {
           iconName: t('pages.projects.portfolio.icon')
         },
         {
+          title: t('pages.projects.jsm.title'),
+          description: t('pages.projects.jsm.description'),
+          links: {
+            git: t('pages.projects.jsm.links.github'),
+            web: t('pages.projects.jsm.links.web')
+          },
+          iconName: t('pages.projects.jsm.icon'),
+          width: 28,
+          height: 28
+        },
+        {
           title: t('pages.projects.mui.title'),
           description: t('pages.projects.mui.description'),
           links: {
