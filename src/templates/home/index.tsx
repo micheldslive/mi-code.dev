@@ -25,11 +25,7 @@ export const HomeTemplate = () => {
               <strong>
                 <Typewriter
                   options={{
-                    strings: [
-                      t('pages.home.meta.1'),
-                      t('pages.home.meta.2'),
-                      t('pages.home.meta.3')
-                    ],
+                    strings: [t('pages.home.meta.1'), t('pages.home.meta.2')],
                     autoStart: true,
                     deleteSpeed: 80,
                     delay: 60,

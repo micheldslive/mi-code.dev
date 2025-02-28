@@ -37,9 +37,8 @@
     "home": {
       "title": "Michel Domingos",
       "meta": {
-        "1": "FrontEnd Engineer.",
-        "2": "BackEnd Developer.",
-        "3": "FullStack Developer."
+        "1": "Software Engineer.",
+        "2": "Fullstack Software Engineer."
       },
       "description": "A guy who loves helping people and making the world a better place."
     },
@@ -47,7 +46,7 @@
       "title": "About | Michel Domingos",
       "description": "Software Developer, passionate about using technology as a means of solving problems that make life easier for the user. My goal is to keep improving my skills, creating high quality, testable, easy to use, visually appealing software combining intuitive design with great functionality for a better user experience. Always looking to stay up to date with the latest web technologies, I have a strong understanding of web development principles such as SEO, accessibility and responsive design. I'm collaborative, I like to help people by sharing knowledge about the technologies I know best.",
 
-      "tagline": "<span>From Recife to as far as there cheese!</span> 🧀",
+      "tagline": "<span>From Recife to as far as there is cheese!</span> 🧀",
       "career": "Career"
     },
     "projects": {
