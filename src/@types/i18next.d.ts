@@ -11,8 +11,8 @@ import type translationPT from '../../public/locales/pt/common.json';
 import type translationEN from '../../public/locales/en/common.json';
 
 interface I18nNamespaces {
-  pt: typeof translationPT;
   en: typeof translationEN;
+  pt: typeof translationPT;
 }
 
 declare module 'i18next' {

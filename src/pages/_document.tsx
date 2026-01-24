@@ -6,7 +6,7 @@ export default class MyDocument extends Document {
     const lang = this.props.__NEXT_DATA__.props.pageProps?.post?.locale;
 
     return (
-      <Html lang={lang ? lang : 'pt'}>
+      <Html lang={lang ? lang : 'en'}>
         <Head>
           <meta charSet='utf-8' />
           <meta content='Michel Domingos' name='author' />
