@@ -15,7 +15,7 @@ export const micodeStore = createStore<IMicodeStore>()(
   persist(
     set => ({
       dark: false,
-      locale: 'pt',
+      locale: 'en',
       setDark: updater => set(state => ({ dark: updater(state.dark) })),
       setLanguage: locale => set(() => ({ locale }))
     }),

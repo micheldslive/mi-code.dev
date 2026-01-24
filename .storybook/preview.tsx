@@ -67,12 +67,12 @@ export const globalTypes = {
   locale: {
     name: 'Language',
     description: 'Internationalization locale',
-    defaultValue: 'pt',
+    defaultValue: 'en',
     toolbar: {
       icon: 'globe',
       items: [
-        { value: 'pt', title: 'Português' },
-        { value: 'en', title: 'English' }
+        { value: 'en', title: 'English' },
+        { value: 'pt', title: 'Português' }
       ],
       showName: true,
       dynamicTitle: true

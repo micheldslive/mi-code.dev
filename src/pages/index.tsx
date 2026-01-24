@@ -10,6 +10,6 @@ export default Home;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => ({
   props: {
-    ...(await serverSideTranslations(locale ?? 'pt'))
+    ...(await serverSideTranslations(locale ?? 'en'))
   }
 });

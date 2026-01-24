@@ -17,8 +17,8 @@ export const LanguageSelect = () => {
         defaultValue={i18n?.language}
         onChange={event => void changeLanguage(event.target.value)}
       >
-        <CustomOption value='pt'>pt</CustomOption>
         <CustomOption value='en'>en</CustomOption>
+        <CustomOption value='pt'>pt</CustomOption>
       </CustomSelect>
     </CustomContainer>
   );
